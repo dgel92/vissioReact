@@ -1,9 +1,11 @@
 import './App.css';
-
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import NavBar from './componentes/navBar/NavBar';
 function App() {
   return (
     <div className="App">
-      mi app
+      <NavBar/>
+      <ItemListContainer titulo="Hola Mundo"/>
     </div>
   );
 }
