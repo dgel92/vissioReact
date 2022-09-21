@@ -1,7 +1,7 @@
 import React from 'react';
 import '../sass/main.css';
 import Logo from '../../multimedia/logoSitio3.png';
-import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from '../CartWidget.jsx/CartWidget';
 
 
 function NavBar(){
