@@ -1,8 +1,44 @@
+import alain from "../../multimedia/alain-1.jpg";
+import anoximenes from "../../multimedia/anoximenes-1.jpg";
+import aristoteles from "../../multimedia/aristoteles-1.jpg";
+import badiou from "../../multimedia/badiou-1.jpg";
+import barcelona from "../../multimedia/barcelona-1.jpg";
+import bimbaum from "../../multimedia/bimbaum-1.jpg";
+import bruno from "../../multimedia/bruno-1.jpg";
+import butler from "../../multimedia/butler-1.jpg";
+import byung from "../../multimedia/byung-1.jpg";
+import charles from "../../multimedia/charles-1.jpg";
+import ciceron from "../../multimedia/ciceron-1.jpg";
+import copernico from "../../multimedia/copernico-1.jpg";
+import dogones from "../../multimedia/dogones-1.jpg";
+import francis from "../../multimedia/francis-1.jpg";
+import francisDos from "../../multimedia/francisDos-1.jpg";
+import galileo from "../../multimedia/galileo-1.jpg";
+import gayatri from "../../multimedia/gayatri-1.jpg";
+import george from "../../multimedia/george-1.jpg";
+import habernas from "../../multimedia/habernas-1.jpg";
+import hegel from "../../multimedia/hegel-1.jpg";
+import heraclito from "../../multimedia/heraclito-1.jpg";
+import hobbes from "../../multimedia/hobbes-1.jpg";
+import inmanuel from "../../multimedia/inmanuel-1.jpg";
+import jhonLocke from "../../multimedia/jhonLocke-1.jpg";
+import judith from "../../multimedia/judith-1.jpg";
+import jurgen from "../../multimedia/jurgen-1.jpg";
+import maquiavelo from "../../multimedia/maquiavelo-1.jpg";
+import martha from "../../multimedia/martha-1.jpg";
+import michel from "../../multimedia/michel-1.jpg";
+import nasbaumm from "../../multimedia/nasbaumm-1.jpg";
+import noam from "../../multimedia/noam-1.jpg";
+import pitagora from "../../multimedia/pitagora-1.jpg";
+import platon from "../../multimedia/platon-1.jpg";
+
+
+
 const dataArray =[
     {
     id: 1,
     nombre: 'Alain',
-    img: "../multimedia/img/alain-1.jpg",
+    img: alain,
     categoria: "escritorio",
     portada: true,
     stock: 5,
@@ -17,7 +53,7 @@ const dataArray =[
     {
     id: 2,
     nombre: 'Anoximenes',
-    img: "../multimedia/img/anoximenes-1.jpg",
+    img: anoximenes,
     categoria: "lampara de pie",
     portada: false,
     stock: 8,
@@ -32,7 +68,7 @@ const dataArray =[
     {
     id: 3,
     nombre: 'Aristoteles',
-    img: "../multimedia/img/aristoteles-1.jpg",
+    img: aristoteles,
     categoria: "lampara de pie",
     portada: false,
     stock: 5,
@@ -47,7 +83,7 @@ const dataArray =[
     {
     id: 4,
     nombre: 'Badiou',
-    img: "../multimedia/img/badiou-1.jpg",
+    img: badiou,
     categoria: "escritorio",
     portada: false,
     stock: 8,
@@ -62,7 +98,7 @@ const dataArray =[
     {
     id: 5,
     nombre: 'Barcelona',
-    img: "../multimedia/img/barcelona-1.jpg",
+    img: barcelona,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -77,7 +113,7 @@ const dataArray =[
     {
     id: 6,
     nombre: 'Bimbaum',
-    img: "../multimedia/img/bimbaum-1.jpg",
+    img: bimbaum,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -92,7 +128,7 @@ const dataArray =[
     {
     id: 7,
     nombre: 'bruno',
-    img: "../multimedia/img/bruno-1.jpg",
+    img: bruno,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -107,7 +143,7 @@ const dataArray =[
     {
     id: 8,
     nombre: 'Butler',
-    img: "../multimedia/img/butler-1.jpg",
+    img: butler,
     categoria: "escritorio",
     portada: true,
     stock: 18,
@@ -122,7 +158,7 @@ const dataArray =[
     {
     id: 9,
     nombre: 'Byung',
-    img: "../multimedia/img/byung-1.jpg",
+    img: byung,
     categoria: "escritorio",
     portada: false,
     stock: 18,
@@ -137,7 +173,7 @@ const dataArray =[
     {
     id: 10,
     nombre: 'Charles',
-    img: "../multimedia/img/charles-1.jpg",
+    img: charles,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -152,7 +188,7 @@ const dataArray =[
     {
     id: 11,
     nombre: 'Ciceron',
-    img: "../multimedia/img/ciceron-1.jpg",
+    img: ciceron,
     categoria: "escritorio",
     portada: false,
     stock: 18,
@@ -167,7 +203,7 @@ const dataArray =[
     {
     id: 12,
     nombre: 'Copernico',
-    img: "../multimedia/img/copernico-1.jpg",
+    img: copernico,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -182,7 +218,7 @@ const dataArray =[
     {
     id: 13,
     nombre: 'Dogones',
-    img: "../multimedia/img/dogones-1.jpg",
+    img: dogones,
     categoria: "escritorio",
     portada: false,
     stock: 18,
@@ -197,7 +233,7 @@ const dataArray =[
     {
     id: 14,
     nombre: 'Francis',
-    img: "../multimedia/img/francis-1.jpg",
+    img: francis,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -212,7 +248,7 @@ const dataArray =[
     {
     id: 15,
     nombre: 'FrancisDos',
-    img: "../multimedia/img/francisDos-1.jpg",
+    img: francisDos,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -227,7 +263,7 @@ const dataArray =[
     {
     id: 16,
     nombre: 'Galileo',
-    img: "../multimedia/img/galileo-1.jpg",
+    img: galileo,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -242,7 +278,7 @@ const dataArray =[
     {
     id: 17,
     nombre: 'Gayatri',
-    img: "../multimedia/img/gayatri-1.jpg",
+    img: gayatri,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -257,7 +293,7 @@ const dataArray =[
     {
     id: 18,
     nombre: 'George',
-    img: "../multimedia/img/george-1.jpg",
+    img: george,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -272,7 +308,7 @@ const dataArray =[
     {
     id: 19,
     nombre: 'Habernas',
-    img: "../multimedia/img/habernas-1.jpg",
+    img: habernas,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -287,7 +323,7 @@ const dataArray =[
     {
     id: 20,
     nombre: 'Hegel',
-    img: "../multimedia/img/hegel-1.jpg",
+    img: hegel,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -302,7 +338,7 @@ const dataArray =[
     {
     id: 21,
     nombre: 'Heraclito',
-    img: "../multimedia/img/heraclito-1.jpg",
+    img: heraclito,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -317,7 +353,7 @@ const dataArray =[
     {
     id: 22,
     nombre: 'Hobbes',
-    img: "../multimedia/img/hobbes-1.jpg",
+    img: hobbes,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -332,7 +368,7 @@ const dataArray =[
     {
     id: 23,
     nombre: 'Inmanuel',
-    img: "../multimedia/img/inmanuel-1.jpg",
+    img: inmanuel,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -347,7 +383,7 @@ const dataArray =[
     {
     id: 24,
     nombre: 'Jhon Locke',
-    img: "../multimedia/img/jhonLocke-1.jpg",
+    img: jhonLocke,
     categoria: "lampara de escritorio",
     portada: false,
     stock: 18,
@@ -362,7 +398,7 @@ const dataArray =[
     {
     id: 25,
     nombre: 'Judith',
-    img: "../multimedia/img/judith-1.jpg",
+    img: judith,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -377,7 +413,7 @@ const dataArray =[
     {
     id: 26,
     nombre: 'Jurgen',
-    img: "../multimedia/img/jurgen-1.jpg",
+    img: jurgen,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -392,7 +428,7 @@ const dataArray =[
     {
     id: 27,
     nombre: 'Maquiavelo',
-    img: "../multimedia/img/maquiavelo-1.jpg",
+    img: maquiavelo,
     categoria: "lampara de pie",
     portada: true,
     stock: 18,
@@ -407,7 +443,7 @@ const dataArray =[
     {
     id: 28,
     nombre: 'Martha',
-    img: "../multimedia/img/martha-1.jpg",
+    img: martha,
     categoria: "colgante",
     portada: false,
     stock: 18,
@@ -422,7 +458,7 @@ const dataArray =[
     {
     id: 29,
     nombre: 'Michel',
-    img: "../multimedia/img/michel-1.jpg",
+    img: michel,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -437,7 +473,7 @@ const dataArray =[
     {
     id: 30,
     nombre: 'Nasbaumm',
-    img: "../multimedia/img/nasbaumm-1.jpg",
+    img: nasbaumm,
     categoria: "escritorio",
     portada: false,
     stock: 18,
@@ -452,7 +488,7 @@ const dataArray =[
     {
     id: 31,
     nombre: 'Noam',
-    img: "../multimedia/img/noam-1.jpg",
+    img: noam,
     categoria: "escritorio",
     portada: false,
     stock: 18,
@@ -467,7 +503,7 @@ const dataArray =[
     {
     id: 32,
     nombre: 'Pitagora',
-    img: "../multimedia/img/pitagora-1.jpg",
+    img: pitagora,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
@@ -482,7 +518,7 @@ const dataArray =[
     {
     id: 33,
     nombre: 'Platon',
-    img: "../multimedia/img/platon-1.jpg",
+    img: platon,
     categoria: "lampara de pie",
     portada: false,
     stock: 18,

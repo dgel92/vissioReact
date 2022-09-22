@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import '../sass/main.css';
 import { useState } from "react";
 import dataArray from "../data/data";
 import ItemList from "../ItemList/ItemList";
@@ -22,8 +23,8 @@ useEffect(() =>{
 
 getdataArray()
     return(
-        <div>
-            <div>
+        <div className="main">
+            <div className="contenedor-productos">
                 <ItemList dataArray={dataArrayEstado}/>
             </div>
         </div>

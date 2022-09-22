@@ -1,13 +1,14 @@
 import './App.css';
+import Footer from './componentes/Footer/Footer';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemCount from './componentes/ItenCount/ItenCount';
 import NavBar from './componentes/navBar/NavBar';
+
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <ItemListContainer titulo="Hola Mundo"/>
-      <ItemCount stock={10} inicial={1}/>
+      <Footer/>
     </div>
   );
 }

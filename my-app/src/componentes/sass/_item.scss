@@ -1,0 +1,41 @@
+.contenedor-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 80px;
+    justify-content: center;
+    padding: 5% 10% 5% 10% ;
+    align-content: center;
+    border: 2px solid red
+    
+}
+.product-card{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 650px;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    border:2px solid $clr-base;
+    border-radius: 12px;
+
+    .card_ph{
+        width: 340px;
+        height: auto;
+    }
+    
+    .product-tittle{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        border: 2px solid blue;
+
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+}

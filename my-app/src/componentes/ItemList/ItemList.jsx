@@ -1,4 +1,5 @@
 import React from 'react';
+import Item from '../Item/Item';
 
 function ItemList({dataArray}){
     
@@ -6,10 +7,7 @@ function ItemList({dataArray}){
         <>
         {dataArray.map(thisDataArray =>{
             return(
-                <div>
-                    <h1>{thisDataArray.nombre}</h1>
-                    <p>{thisDataArray.precio}</p>
-                </div>
+                <Item dataArray={thisDataArray} key={thisDataArray.id}/>
                 )
             })
         }
