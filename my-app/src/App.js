@@ -1,13 +1,14 @@
 import './App.css';
 import Footer from './componentes/Footer/Footer';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import NavBar from './componentes/navBar/NavBar';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer titulo="Hola Mundo"/>
+      {/*<ItemListContainer titulo="Hola Mundo"/> */}
+      {<ItemDetailContainer/>}
       <Footer/>
     </div>
   );
