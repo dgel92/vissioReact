@@ -4,20 +4,24 @@ import { useState } from "react";
 import dataArray from "../data/data";
 import ItemDetail from "../ItemDeital/ItemDetail";
 
-function getdataArray(){
+function getdataArray(id){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            resolve(dataArray);
+            const productoFind = dataArray.find((producto)=>{
+                return id === producto.id
+            });
+            resolve(productoFind)
         }, 500);
     });
 }
 
-function ItemDetailContainer() {
-const [arrayEstado, setdataArray] = useState([])
+function ItemDetailContainer({id}) {
+const [dataArrayEstado, setdataArray] = useState([])
+
 
 useEffect(() =>{
-    getdataArray().then(respuestaPromise=>{
-        setdataArray(respuestaPromise[0]);
+    getdataArray(id).then(respuestaPromise=>{
+        setdataArray(respuestaPromise);
     })
     }, []);
 
@@ -25,7 +29,7 @@ getdataArray()
     return(
         <div>
             <div>
-                <ItemDetail arrayEstado={arrayEstado}/>
+                <ItemDetail dataArrayEstado={dataArrayEstado}/>
             </div>
         </div>
     ) 

@@ -1,21 +1,23 @@
 import React from "react";
 import '../sass/main.css';
 import Card from 'react-bootstrap/Card';
-import dataArray from "../data/data";
+import ItemCount from "../ItenCount/ItenCount";
 
-function ItemDetail({dataArray}){
+function ItemDetail({dataArrayEstado}){
     return(
         <>
         <Card style={{ width: '20rem' }}>
-            <Card.Img alt="" variant="top" src={dataArray.img} />
+            <Card.Img variant="top" src={dataArrayEstado.img} />
             <Card.Body>
-                <Card.Title>{dataArray.nombre}</Card.Title>
+                <Card.Title>{dataArrayEstado.nombre}</Card.Title>
                 <Card.Text>
-                Precio: ${dataArray.precio}
+                Precio: ${dataArrayEstado.precio}
                 </Card.Text>
                 <br/>
             </Card.Body>
         </Card>
+
+        <ItemCount stock={dataArrayEstado.stock} inicial={1}/>
         </>
     )
 }

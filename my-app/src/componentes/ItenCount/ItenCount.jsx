@@ -17,19 +17,16 @@ const resta = () => {
 
 
     return(
-        <>
-            <h1>ItemCount</h1>
+        <div>
             <div>
-                <div>
-                    <button onclick={resta}> - </button>
-                    <span> {count} </span>
-                    <button onclick={suma}> + </button>
-                </div>
-                <div>
-                    <button onClick={() => props.onAdd(count)}>Agregar al Carrito</button>
-                </div>
+                <button onClick={resta}> - </button>
+                <span> {count} </span>
+                <button onClick={suma}> + </button>
             </div>
-        </>
+            <div>
+                <button onClick={() => props.onAdd(count)}>Agregar al Carrito</button>
+            </div>
+        </div>
     )
 }
 
