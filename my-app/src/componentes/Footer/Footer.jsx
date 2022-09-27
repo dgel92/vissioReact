@@ -15,9 +15,9 @@ function Footer(){
             <hr></hr>
             <div className="footer-text"><a>Siguenos</a></div>
                 <div className="footerMenu">
-                    <li><a><span><Icon icon="akar-icons:whatsapp-fill" height="30"/></span></a></li>
-                    <li><a><span><Icon icon="akar-icons:facebook-fill" height="30"/></span></a></li>
-                    <li><a><span><Icon icon="akar-icons:instagram-fill"  height="30"  /></span></a></li>
+                    <li><a><span><Icon icon="logos:whatsapp-icon" height="50"/></span></a></li>
+                    <li><a><span><Icon icon="logos:facebook" height="50"/></span></a></li>
+                    <li><a><span><Icon icon="ant-design:instagram-outlined" color="#850" height="60"/></span></a></li>
                 </div>
             <hr></hr>
                 <div className="footer-text"><a>Ayuda</a></div>

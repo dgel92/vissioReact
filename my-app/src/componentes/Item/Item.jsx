@@ -2,6 +2,7 @@ import React from "react";
 import '../sass/main.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {Link} from "react-router-dom";
 
 function Item({dataArray}){
     return(
@@ -14,7 +15,7 @@ function Item({dataArray}){
                 Precio: ${dataArray.precio}
                 </Card.Text>
                 <br/>
-                <Button variant="secondary">Ver mas</Button>
+                <Link to={`/Producto/${dataArray.id}`}><Button variant="secondary">Ver mas</Button></Link>
             </Card.Body>
         </Card>
         </>
