@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 import Carrousel from '../componentes/Carrousel/Carrousel';
 
 function ItemPortada() {
-    <Carrousel/>
     return(
     <>
+    <Carrousel/>
         <section className='img-tienda'>
             <div>
                 <Link to="/"><img src={tienda} alt="" className='img-box1'/></Link>

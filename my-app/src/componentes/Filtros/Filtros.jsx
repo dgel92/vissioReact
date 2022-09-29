@@ -1,6 +1,7 @@
 import React from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
+import {Link} from "react-router-dom";
 
 function Filtros() {
     return (
@@ -13,25 +14,14 @@ function Filtros() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Lamparas de pie</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Lamparas de escritorio</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Lamparas Colgantes</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Lamparas Infantiles</Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/lampara de pie">Lamparas de pie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/escritorio">Lamparas de escritorio</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/colgante">Lamparas Colgantes</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/infantil">Lamparas Infantiles</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             
-            <Dropdown className="btnFiltro">
-                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                    Filtrar Por precio
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Mayor a menor</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Menor a mayor</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            
-            <Button variant="secondary">Borrar Filtros</Button>
+            <Button variant="secondary"><Link to="/tienda">Borrar Filtros</Link></Button>
         </div>
         </>
     );

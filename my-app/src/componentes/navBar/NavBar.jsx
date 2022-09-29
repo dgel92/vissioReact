@@ -17,7 +17,6 @@ function NavBar(){
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/tienda">Tienda</Link></li>
                                         <li><Link to="/sobreNosotros">Sobre nosotros</Link></li>
-                                        <li><Link to="/CuidadosYMantenimiento">Cuidados y mantenimiento</Link></li>
                                     </ul>
                                 </div>
                             </section>

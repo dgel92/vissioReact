@@ -6,24 +6,37 @@ import ItemList from "../ItemList/ItemList";
 import {useParams} from "react-router-dom";
 import Filtros from "../Filtros/Filtros";
 
-function getdataArray(){
+function getdataArray(tiendaid){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
+            if (tiendaid !== undefined){
+                const arrayFiltrado = dataArray.filter((producto)=>{
+                    return producto.categoria === tiendaid;
+
+                })
+                resolve(arrayFiltrado)
+
+            }
+            else{
             resolve(dataArray);
+        }
         }, 500);
     });
 }
 
-function ItemListContainer(props) {
+
+
+
+function ItemListContainer({titulo}) {
 const [dataArrayEstado, setdataArray] = useState([])
-const {categoryid} = useParams();
-console.log("ID: " + categoryid);
+const {tiendaid} = useParams();
+console.log("ID: " + tiendaid);
 
 useEffect(() =>{
-    getdataArray().then(respuestaPromise=>{
+    getdataArray(tiendaid).then(respuestaPromise=>{
         setdataArray(respuestaPromise);
     })
-    }, []);
+    }, [tiendaid]);
 
 getdataArray()
     return(
