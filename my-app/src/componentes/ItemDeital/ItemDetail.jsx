@@ -2,8 +2,17 @@ import React from "react";
 import '../sass/main.css';
 import Card from 'react-bootstrap/Card';
 import ItemCount from "../ItenCount/ItenCount";
+import { useState } from "react";
 
 function ItemDetail({dataArrayEstado}){
+
+    const [isInCart, setIsInCount] = useState(false)
+    function onAdd(count){
+        console.log(`agregaste al carrito ${count}`)
+        setIsInCount(true);
+
+
+    }
     return(
         <>
         <Card style={{ width: '20rem' }}>
@@ -16,8 +25,11 @@ function ItemDetail({dataArrayEstado}){
                 <br/>
             </Card.Body>
         </Card>
-
-        <ItemCount stock={dataArrayEstado.stock} inicial={1}/>
+        {isInCart?
+            <button>Ver tu Carrito</button>
+            :
+        <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
+        }
         </>
     )
 }
