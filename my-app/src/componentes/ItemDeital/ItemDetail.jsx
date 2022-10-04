@@ -3,16 +3,19 @@ import '../sass/main.css';
 import Card from 'react-bootstrap/Card';
 import ItemCount from "../ItenCount/ItenCount";
 import { useState } from "react";
+import useCartContext from "../CartContext/CartContext";
+
 
 function ItemDetail({dataArrayEstado}){
 
     const [isInCart, setIsInCount] = useState(false)
+    const {addToCart}= useCartContext();
+    
     function onAdd(count){
-        console.log(`agregaste al carrito ${count}`)
         setIsInCount(true);
-
-
-    }
+        addToCart(dataArrayEstado, count)
+        console.log("agregado al cart: ", dataArrayEstado, count)
+    };
     return(
         <>
         <Card style={{ width: '20rem' }}>

@@ -3,8 +3,13 @@ import '../sass/main.css';
 import Logo from '../../multimedia/logoSitio3.png';
 import CartWidget from '../CartWidget.jsx/CartWidget';
 import {Link} from "react-router-dom";
+import useCartContext from '../CartContext/CartContext';
+
+
 
 function NavBar(){
+    const {contextFunction} = useCartContext();
+    contextFunction();
     return(
         <>
             <div class="navlineaNegrita"><p>Envios a todo el pais - </p></div>
