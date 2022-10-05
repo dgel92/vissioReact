@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import ItemCount from "../ItenCount/ItenCount";
 import { useState } from "react";
 import useCartContext from "../CartContext/CartContext";
-
+import {Link} from "react-router-dom";
 
 function ItemDetail({dataArrayEstado}){
 
@@ -29,7 +29,7 @@ function ItemDetail({dataArrayEstado}){
             </Card.Body>
         </Card>
         {isInCart?
-            <button>Ver tu Carrito</button>
+            <Link to="/cart">Ver tu Carrito</Link>
             :
         <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
         }
