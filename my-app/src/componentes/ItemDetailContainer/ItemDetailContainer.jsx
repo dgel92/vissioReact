@@ -17,7 +17,7 @@ function getdataArray(id){
 }
 
 function ItemDetailContainer() {
-const [dataArrayEstado, setdataArray] = useState([])
+const [dataArrayEstado, setdataArray] = useState()
 const {productoid}= useParams()
 
 useEffect(() =>{

@@ -16,6 +16,11 @@ function ItemDetail({dataArrayEstado}){
         addToCart(dataArrayEstado, count)
         console.log("agregado al cart: ", dataArrayEstado, count)
     };
+
+    if(!dataArrayEstado){
+        return<h4>Cargando...</h4>
+    }
+    else{
     return(
         <>
         <Card style={{ width: '20rem' }}>
@@ -34,7 +39,8 @@ function ItemDetail({dataArrayEstado}){
         <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
         }
         </>
-    )
+        )
+    }
 }
 
 export default ItemDetail
