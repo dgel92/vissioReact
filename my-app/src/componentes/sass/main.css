@@ -39,6 +39,63 @@ svg {
   padding-right: 30px;
 }
 
+.formularioContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 7.5vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 100%;
+}
+
+.formularioContacto h1 {
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.08em;
+}
+
+.formularioContacto h4 {
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 1.4rem;
+  letter-spacing: 0.09em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
+}
+
+.imagenFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
 .navlineaNegrita {
   display: -webkit-box;
   display: -ms-flexbox;

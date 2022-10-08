@@ -1,0 +1,42 @@
+.formularioContacto{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 7.5vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 100%;
+
+    h1{
+        text-align: center;
+        padding-right:10% ;
+        padding-left:10% ;
+        font-family: $vietnam;
+        font-size: 3rem;
+        letter-spacing: 0.08em;
+    }
+    h4{
+        text-align: center;
+        padding-right:10% ;
+        padding-left:10% ;
+        font-size: 1.4rem;
+        letter-spacing: 0.09em;
+        font-family: $roboto;
+        font-weight: 550;
+    }
+}
+
+.imagenFormulario{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+.form{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}

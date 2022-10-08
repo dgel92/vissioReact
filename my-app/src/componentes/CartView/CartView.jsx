@@ -26,10 +26,11 @@ function CartView(){
             
             })}
             <button onClick={clearCart}>Vaciar Carrito</button>
+            <h3>Finalizar Compra</h3>
         </div>}
     }
 
 export default CartView
 
 
-// clase 11 min 13.40//
+// clase 12 min 01//

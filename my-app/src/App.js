@@ -8,6 +8,10 @@ import ItemPortada from './componentes/Portada';
 import SobreNosotros from './componentes/SobreNosotros';
 import { CartContextrProvider } from './componentes/CartContext/CartContext';
 import CartView from './componentes/CartView/CartView';
+import Contactanos from './contactanos/Contactanos';
+import CuidadosYMantenimiento from './componentes/cuidadosYMantenimiento/CuidadosYMantenimiento';
+import PostVenta from './componentes/PostVenta/PostVenta';
+import TenesUnaTienda from './componentes/tenesUnaTienda/tenesUnaTienda';
 
 function App() {
   return (
@@ -23,6 +27,11 @@ function App() {
                 <Route path="/cart" element={<CartView/>}/>
 
                 <Route path="/sobreNosotros" element={<SobreNosotros/>}/> 
+                <Route path="/contactanos" element={<Contactanos/>}/> 
+                <Route path="/CuidadosYMantenimiento" element={<CuidadosYMantenimiento/>}/>
+                <Route path="/PostVenta" element={<PostVenta/>}/>
+                <Route path="/TenesUnaTienda" element={<TenesUnaTienda/>}/>
+
                 <Route path="/Producto/:productoid" element={<ItemDetailContainer/>}/>
               </Routes>
             <Footer/>
