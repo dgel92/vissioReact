@@ -16,7 +16,7 @@ function Contactanos() {
                 <h4>Si estas interesado en encargar algo a medida, tienes un proyecto creativo en mente que te gustaria contarnos, puedes escribirnos a hola@vissio.com o rellena el siguiente formulario aqui abajo y nos pondremos en contacto contigo lo antes posible.</h4>    
             </div>
             <Form className='form' id="form">
-                <fieldset disabled>
+                <fieldset actived>
                     <Form.Group className="mb-3">
                         <Form.Label type="text" htmlFor="disabledTextInput">Nombre</Form.Label>
                         <Form.Control placeholder="Tu nombre" name="name"/>
