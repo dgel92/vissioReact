@@ -1,10 +1,25 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import imgFormularioContacto from '../multimedia/imgFormularioContacto.jpg';
+import React, { useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
-function Contactanos() {
+export const ContactUs = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6ycvs8o', 'template_gvdoo0l', e.target, 'r-foasPasxzvfpP4C')
+        .then((result) => {
+            alert(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     return (
-        <>
         <section className='formularioContacto'>
             <div>
                 <h1>Contacto</h1>
@@ -15,7 +30,7 @@ function Contactanos() {
             <div>
                 <h4>Si estas interesado en encargar algo a medida, tienes un proyecto creativo en mente que te gustaria contarnos, puedes escribirnos a hola@vissio.com o rellena el siguiente formulario aqui abajo y nos pondremos en contacto contigo lo antes posible.</h4>    
             </div>
-            <Form className='form' id="form">
+            <Form className='form' id="form" onSubmit={sendEmail}>
                 <fieldset actived>
                     <Form.Group className="mb-3">
                         <Form.Label type="text" htmlFor="disabledTextInput">Nombre</Form.Label>
@@ -30,19 +45,14 @@ function Contactanos() {
                         <Form.Label type="number" htmlFor="disabledTextInput">Teléfono</Form.Label>
                         <Form.Control placeholder="12345678" name="phone"/>
                     </Form.Group>
-                    
+        
                     <Form.Group className="mb-3">
-                        <Form.Group className="mb-3">
-                        <Form.Label>Tu mensaje</Form.Label>
-                        <Form.Control as="textarea" rows={3} name="menssage"/>
-                    </Form.Group>
+                        <Form.Label type="text">Tu mensaje</Form.Label>
+                        <Form.Control placeholder="mensaje" as="textarea" rows={3} name="message"/>
                     </Form.Group>
                     <Button type="submit" id="button">Enviar</Button>
                 </fieldset>
                 </Form>
-            </section>
-            </>
+        </section>
     );
-}
-
-export default Contactanos;
+};

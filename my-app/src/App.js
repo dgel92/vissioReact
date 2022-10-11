@@ -8,7 +8,7 @@ import ItemPortada from './componentes/Portada';
 import SobreNosotros from './componentes/SobreNosotros';
 import { CartContextrProvider } from './componentes/CartContext/CartContext';
 import CartView from './componentes/CartView/CartView';
-import Contactanos from './contactanos/Contactanos';
+import {ContactUs} from './contactanos/Contactanos';
 import CuidadosYMantenimiento from './componentes/cuidadosYMantenimiento/CuidadosYMantenimiento';
 import PostVenta from './componentes/PostVenta/PostVenta';
 import TenesUnaTienda from './componentes/tenesUnaTienda/tenesUnaTienda';
@@ -27,7 +27,7 @@ function App() {
                 <Route path="/cart" element={<CartView/>}/>
 
                 <Route path="/sobreNosotros" element={<SobreNosotros/>}/> 
-                <Route path="/contactanos" element={<Contactanos/>}/> 
+                <Route path="/Contactanos" element={<ContactUs/>}/> 
                 <Route path="/CuidadosYMantenimiento" element={<CuidadosYMantenimiento/>}/>
                 <Route path="/PostVenta" element={<PostVenta/>}/>
                 <Route path="/TenesUnaTienda" element={<TenesUnaTienda/>}/>
