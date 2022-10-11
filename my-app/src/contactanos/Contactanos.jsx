@@ -3,7 +3,6 @@ import Form from 'react-bootstrap/Form';
 import imgFormularioContacto from '../multimedia/imgFormularioContacto.jpg';
 import React, { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
 
 export const ContactUs = () => {
     const form = useRef();
