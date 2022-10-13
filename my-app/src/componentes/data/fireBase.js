@@ -67,7 +67,8 @@ export async function dataToFirebase(){
 
     PRODUCTOS.forEach((item) =>{
         const newDoc = doc(miCatalogo);
-        setDoc(newDoc, item).then(()=>{
+        setDoc(newDoc, item)
+        .then(()=>{
             console.log("document written with id:", newDoc.id)})
         .catch(err=>{
             console.log("error adding document: ", err);

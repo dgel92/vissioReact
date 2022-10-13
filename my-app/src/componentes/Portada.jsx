@@ -10,10 +10,10 @@ function ItemPortada() {
     <Carrousel/>
         <section className='img-tienda'>
             <div>
-                <Link to="/"><img src={tienda} alt="" className='img-box1'/></Link>
+                <Link to="/tienda"><img src={tienda} alt="" className='img-box1'/></Link>
             </div>
             <div>
-                <Link to="/"><img src={tienda} alt="" className='img-box2'/></Link>
+                <Link to="/sobreNosotros"><img src={tienda} alt="" className='img-box2'/></Link>
             </div>
         </section>
         <div className="text-portada">

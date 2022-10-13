@@ -405,4 +405,48 @@ svg {
   font-size: 2.3rem;
   font-family: "Be Vietnam", sans-serif;
 }
+
+.sobreNosotros-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.sobreNosotros-imgPortada {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.sobreNosotros-tittle {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.sobreNosotros-tittle h3 {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 2rem;
+}
+
+.sobreNosotros-tittle h4 {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 2rem;
+}
+
+.sobreNosotros-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
 /*# sourceMappingURL=main.css.map */
