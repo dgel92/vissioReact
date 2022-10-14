@@ -22,18 +22,18 @@ function Footer(){
             <hr></hr>
                 <div className="footer-text"><a>Ayuda</a></div>
                 <div className="footerlist">
-                    <li><Link to="/contactanos">Contactanos</Link></li>
-                    <li><Link to="/CuidadosYMantenimiento">Cuidados y mantenimiento</Link></li>
-                    <li><Link to="/PostVenta">Servicio Post-venta</Link></li>
-                    <li><Link to="/TenesUnaTienda">¿Tienes una tienda?</Link></li>
+                    <li><Link to="/contactanos" className="links">Contactanos</Link></li>
+                    <li><Link to="/CuidadosYMantenimiento" className="links">Cuidados y mantenimiento</Link></li>
+                    <li><Link to="/PostVenta" className="links">Servicio Post-venta</Link></li>
+                    <li><Link to="/TenesUnaTienda" className="links">¿Tienes una tienda?</Link></li>
                 </div>
             <hr></hr>
                 <div className="footer-text"><a>Importante</a></div>
                 <div className="footerlist">
-                    <li><span>Pedidos, envios y devoluciones</span></li>
-                    <li><span>Encargar a medida</span></li>
-                    <li><span>Aviso Legal</span></li>
-                    <li><span>Privacidad y Cookies</span></li>
+                    <li><Link to="/EnviosPedidosYDevoluciones" className="links">Pedidos, envios y devoluciones</Link></li>
+                    <li><Link to="/contactanos" className="links">Encargar a medida</Link></li>
+                    <li><Link to="/AvisosLegales" className="links">Aviso Legal</Link></li>
+                    <li><Link to="/PrivacidadYCookies" className="links">Privacidad y Cookies</Link></li>
                 </div>
                     <div className="footerFinal"></div>
             </section>

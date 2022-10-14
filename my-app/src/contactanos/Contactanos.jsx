@@ -33,21 +33,21 @@ export const ContactUs = () => {
                 <fieldset actived>
                     <Form.Group className="mb-3">
                         <Form.Label type="text" htmlFor="disabledTextInput">Nombre</Form.Label>
-                        <Form.Control placeholder="Tu nombre" name="name"/>
+                        <Form.Control placeholder="Tu nombre" name="name" required/>
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Label type="email" htmlFor="disabledTextInput">correo electrónico</Form.Label>
-                        <Form.Control placeholder="tu@email.com" name="email"/>
+                        <Form.Control placeholder="tu@email.com" name="email" required/>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label type="number" htmlFor="disabledTextInput">Teléfono</Form.Label>
-                        <Form.Control placeholder="12345678" name="phone"/>
+                        <Form.Control placeholder="12345678" name="phone" required/>
                     </Form.Group>
         
                     <Form.Group className="mb-3">
                         <Form.Label type="text">Tu mensaje</Form.Label>
-                        <Form.Control placeholder="mensaje" as="textarea" rows={3} name="message"/>
+                        <Form.Control placeholder="mensaje" as="textarea" rows={3} name="message" required/>
                     </Form.Group>
                     <Button type="submit" id="button">Enviar</Button>
                 </fieldset>

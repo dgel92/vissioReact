@@ -133,7 +133,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: bisque;
+  background-color: rgba(231, 231, 231, 0.301);
 }
 
 .navcontainer .brand {
@@ -332,6 +332,17 @@ svg {
   background: black;
 }
 
+.links {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+:hover.links {
+  color: black;
+  font-size: 0.85rem;
+}
+
 @media (min-width: 770px) {
   .cardFooter {
     display: -webkit-box;
@@ -372,11 +383,59 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 2px solid blue;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-.img-tienda a:hover {
-  opacity: 0.75;
+.img-portada {
+  width: 95%;
+  max-width: 100%;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-portada img {
+  width: 100%;
+}
+
+.img-portada :hover img {
+  opacity: 0.8;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.img-portada .txt {
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  letter-spacing: .09em;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
+}
+
+.img-portada .txt h5 {
+  font-size: 1.5rem;
+  font-family: "Be Vietnam", sans-serif;
+  color: white;
+  padding: 10px 20px;
+}
+
+.img-portada:hover .txt {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 .img-box1 {
@@ -392,20 +451,35 @@ svg {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 40vh;
+  padding-left: 40vh;
+}
+
+.text-portada h2 {
+  font-size: 2.3rem;
+  letter-spacing: .05em;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-portada h3 {
-  font-size: 2.3rem;
-  font-family: "Be Vietnam", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .09em;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
 }
 
+/* 
+c-img = img-portada
+txt = txt
+
+*/
 .sobreNosotros-container {
   display: -webkit-box;
   display: -ms-flexbox;

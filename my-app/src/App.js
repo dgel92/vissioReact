@@ -12,6 +12,9 @@ import {ContactUs} from './contactanos/Contactanos';
 import CuidadosYMantenimiento from './componentes/cuidadosYMantenimiento/CuidadosYMantenimiento';
 import PostVenta from './componentes/PostVenta/PostVenta';
 import TenesUnaTienda from './componentes/tenesUnaTienda/tenesUnaTienda';
+import EnviosYDevoluciones from './componentes/pedidosEnviosYDevoluciones/PedidosEnviosYDevoluciones';
+import AvisoLegal from './componentes/AvisosLegales/AvisosLegales';
+import Privacidad from './componentes/privacidad/Privacidad';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
                 <Route path="/CuidadosYMantenimiento" element={<CuidadosYMantenimiento/>}/>
                 <Route path="/PostVenta" element={<PostVenta/>}/>
                 <Route path="/TenesUnaTienda" element={<TenesUnaTienda/>}/>
+                <Route path="/EnviosPedidosYDevoluciones" element={<EnviosYDevoluciones/>}/>
+                <Route path="/AvisosLegales" element={<AvisoLegal/>}/>
+                <Route path="/PrivacidadYCookies" element={<Privacidad/>}/>
 
                 <Route path="/Producto/:productoid" element={<ItemDetailContainer/>}/>
               </Routes>

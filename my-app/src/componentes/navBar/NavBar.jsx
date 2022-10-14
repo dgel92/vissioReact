@@ -19,7 +19,7 @@ function NavBar(){
                             <section class="navbar">
                                 <div class="menuNav">
                                     <ul class="menu">
-                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/">Inicio</Link></li>
                                         <li><Link to="/tienda">Tienda</Link></li>
                                         <li><Link to="/sobreNosotros">Sobre nosotros</Link></li>
                                     </ul>
