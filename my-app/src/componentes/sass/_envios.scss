@@ -1,0 +1,46 @@
+.envios-container{
+    display:flex;
+    flex-direction: column;
+    margin: 8vh 50vh 5vh 50vh;
+    align-items: center;
+
+    .envios-title{
+        margin-bottom: 3vh;
+        h1{
+            font-size: 2rem;
+            font-family: $vietnam;
+            letter-spacing: 1.5px;
+        }
+
+    }
+    .envios-txt{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+
+            h5{
+                font-size: 1.2rem;
+                font-family: $roboto;
+                letter-spacing: 1.3px;
+
+            }
+    }
+
+    .envios-subtitle{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        justify-content: left;
+
+        h2{
+            font-size: 1.8rem;
+            font-family: $vietnam;
+            letter-spacing: 1.5px;
+        }
+    }
+}

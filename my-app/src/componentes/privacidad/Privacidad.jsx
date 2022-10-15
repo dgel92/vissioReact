@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Privacidad(){
     return(
     <div>
-        <h1>Privacidad y cookies</h1>
+        <h1>Cuidados y mantenimiento</h1>
     </div>
     )
 }

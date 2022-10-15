@@ -3,9 +3,11 @@ import {Link} from "react-router-dom";
 
 function CuidadosYMantenimiento(){
     return(
-    <div>
-        <h1>Cuidados y mantenimiento</h1>
-    </div>
+        <section className="cuidados-container">
+            <div className="cuidados-title">
+                <h1>Cuidados y mantenimiento</h1>
+            </div>
+        </section>
     )
 }
 
