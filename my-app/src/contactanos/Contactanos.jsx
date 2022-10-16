@@ -27,7 +27,8 @@ export const ContactUs = () => {
                 <img src={imgFormularioContacto} alt="imagen de formulario"/>
             </div>
             <div>
-                <h4>Si estas interesado en encargar algo a medida, tienes un proyecto creativo en mente que te gustaria contarnos, puedes escribirnos a hola@vissio.com o rellena el siguiente formulario aqui abajo y nos pondremos en contacto contigo lo antes posible.</h4>    
+                <h4>Si estas interesado en encargar algo a medida, tienes un proyecto creativo en mente que te gustaria contarnos o ¿tienes una tienda? <br/><br/>
+                Puedes escribirnos a hola@vissio.com o rellena el siguiente formulario aqui abajo y nos pondremos en contacto contigo lo antes posible.</h4>    
             </div>
             <Form className='form' id="form" onSubmit={sendEmail}>
                 <fieldset actived>

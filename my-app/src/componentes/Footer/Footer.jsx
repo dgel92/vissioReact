@@ -25,7 +25,7 @@ function Footer(){
                     <li><Link to="/contactanos" className="links">Contactanos</Link></li>
                     <li><Link to="/CuidadosYMantenimiento" className="links">Cuidados y mantenimiento</Link></li>
                     <li><Link to="/PostVenta" className="links">Servicio Post-venta</Link></li>
-                    <li><Link to="/TenesUnaTienda" className="links">¿Tienes una tienda?</Link></li>
+                    <li><Link to="/contactanos" className="links">¿Tienes una tienda?</Link></li>
                 </div>
             <hr></hr>
                 <div className="footer-text"><a>Importante</a></div>
@@ -33,7 +33,6 @@ function Footer(){
                     <li><Link to="/EnviosPedidosYDevoluciones" className="links">Pedidos, envios y devoluciones</Link></li>
                     <li><Link to="/contactanos" className="links">Encargar a medida</Link></li>
                     <li><Link to="/AvisosLegales" className="links">Aviso Legal</Link></li>
-                    <li><Link to="/PrivacidadYCookies" className="links">Privacidad y Cookies</Link></li>
                 </div>
                     <div className="footerFinal"></div>
             </section>
