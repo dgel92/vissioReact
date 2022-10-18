@@ -23,21 +23,25 @@ function ItemDetail({dataArrayEstado}){
     else{
     return(
         <>
-        <Card style={{ width: '20rem' }}>
-            <Card.Img variant="top" src={dataArrayEstado.img} />
-            <Card.Body>
-                <Card.Title>{dataArrayEstado.nombre}</Card.Title>
-                <Card.Text>
-                Precio: ${dataArrayEstado.precio}
-                </Card.Text>
-                <br/>
-            </Card.Body>
-        </Card>
-        {isInCart?
-            <Link to="/cart">Ver tu Carrito</Link>
-            :
-        <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
-        }
+        <div className="detail-container">
+            <Card style={{ width: '40rem' }}>
+                <Card.Img variant="top" src={dataArrayEstado.img} />
+            </Card>
+                <div className="detail-card">
+                    <Card.Body>
+                            <Card.Title>{dataArrayEstado.nombre}</Card.Title>
+                            <Card.Text>
+                            Precio: ${dataArrayEstado.precio}
+                            </Card.Text>
+                            <br/>
+                        {isInCart?
+                            <Link to="/cart">Ver tu Carrito</Link>
+                            :
+                            <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
+                        }
+                    </Card.Body>
+                </div>
+        </div>
         </>
         )
     }

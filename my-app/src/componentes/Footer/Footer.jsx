@@ -7,12 +7,10 @@ import {Link} from "react-router-dom";
 function Footer(){
     return(
         <>
-        <section>
+        <section className="cardFooter">
             <div className="logoFooter">
-                <img width="260" src={Logo} alt="logo tienda"/>
+                <img src={Logo} alt="logo tienda"/>
             </div>
-                
-            <hr></hr>
             <div className="footer-text"><a>Siguenos</a></div>
                 <div className="footerMenu">
                     <li><a href="https://wa.me/5493514597445"><Icon icon="logos:whatsapp-icon" height="50"/></a></li>

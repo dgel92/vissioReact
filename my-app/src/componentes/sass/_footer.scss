@@ -1,18 +1,18 @@
 .cardFooter{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20vh;
 }
 
 
 .logoFooter{
     display:flex;
-    width: auto;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
     justify-content: center;
     height: auto;
+    margin-top: 20vh;
     padding: 20px;
 }
 
