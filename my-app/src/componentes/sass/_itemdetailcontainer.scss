@@ -7,4 +7,67 @@
 .detail-card{
     display:flex;
     flex-direction: column;
+    margin:0vh 0vh 0vh 40vh;
+
+    .detail-name{
+        font-size: 3rem;
+        font-weight: 450;
+        font-family: $roboto;
+    }
+
+    .detail-precio{
+        margin-top:10px;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: $roboto;
+    }
+
+    .detail-caracteristica{
+        display:flex;
+        width: 480px;
+        height: 200px;
+        border: 2px solid red;
+    }
+
+}
+
+.count-container{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border: 2px solid blue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    span{
+        font-size: 3rem;
+    }
+
+    .count-card{
+
+    button{
+        width: 8vh;
+        height: 5.5vh;
+        border-radius: 20px;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        margin-bottom: 3vh;
+        font-weight: 400;
+        font-size: 2rem;
+        }
+    }
+
+
+    .count-add{
+        
+        button{
+            width: 16vh;
+            height: 6vh;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+    }
 }

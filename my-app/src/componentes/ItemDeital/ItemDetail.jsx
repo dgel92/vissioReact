@@ -24,21 +24,27 @@ function ItemDetail({dataArrayEstado}){
     return(
         <>
         <div className="detail-container">
-            <Card style={{ width: '40rem' }}>
+            <Card style={{ width: '42rem' }}>
                 <Card.Img variant="top" src={dataArrayEstado.img} />
             </Card>
                 <div className="detail-card">
                     <Card.Body>
-                            <Card.Title>{dataArrayEstado.nombre}</Card.Title>
-                            <Card.Text>
+                            <Card.Title className="detail-name"> Lampara {dataArrayEstado.nombre}</Card.Title>
+                            <Card.Text className="detail-precio">
                             Precio: ${dataArrayEstado.precio}
                             </Card.Text>
+                            <h4>Caracteristica<br/></h4>
+                            <Card.Text className="detail-caracteristica">
+                                {dataArrayEstado.caracteristica}
+                            </Card.Text>
                             <br/>
-                        {isInCart?
-                            <Link to="/cart">Ver tu Carrito</Link>
-                            :
-                            <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
-                        }
+                            <Card.Text>
+                                {isInCart?
+                                    <Link to="/cart">Ver tu Carrito</Link>
+                                    :
+                                    <ItemCount onAdd={onAdd} stock={dataArrayEstado.stock} inicial={1}/>
+                                }
+                            </Card.Text>
                     </Card.Body>
                 </div>
         </div>
