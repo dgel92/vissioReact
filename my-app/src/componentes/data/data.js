@@ -156,17 +156,17 @@ const dataArray =[
     {
     id: 1,
     nombre: 'Alain',
+    
     img: alain,
-    img2: alain1,
-    img3: alain2,
-    img4: alain3,
-    img5: alain4,
-    img6: alain5,
+    img1: alain1,
+    img2: alain2,
+    img3: alain3,
+
     categoria: "escritorio",
     portada: true,
     stock: 5,
     precio: 5820,
-    caracteristica: "lampara elaborada en Cedro - ........................",
+    caracteristica: "Lampara de escritorio fabricada en Cedro",
     alto: '60cm',
     diametro: '25cm',
     Tipodelampara: 'Led',
@@ -177,11 +177,12 @@ const dataArray =[
     {
     id: 2,
     nombre: 'Anoximenes',
+    
     img: anoximenes,
     img1: anoximenes1,
     img2: anoximenes2,
     img3: anoximenes3,
-    img4: anoximenes4,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 8,
@@ -197,12 +198,18 @@ const dataArray =[
     {
     id: 3,
     nombre: 'Aristoteles',
+    
     img: aristoteles,
     img1: aristoteles1,
+    img2: aristoteles,
+    img3: aristoteles1,
+
+
     categoria: "lampara de pie",
     portada: false,
     stock: 5,
     precio: 5040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.58m',
     diametro: 'nn',
     Tipodelampara: 'Led',
@@ -213,15 +220,17 @@ const dataArray =[
     {
     id: 4,
     nombre: 'Badiou',
+    
     img: badiou,
     img1: badiou1,
     img2: badiou2,
     img3: badiou3,
-    img4: badiou4,
+
     categoria: "escritorio",
     portada: false,
     stock: 8,
     precio: 7040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.30m',
     diametro: '0.24m',
     Tipodelampara: 'Con filamentos de carbono',
@@ -232,15 +241,18 @@ const dataArray =[
     {
     id: 5,
     nombre: 'Barcelona',
+    
     img: barcelona,
     img1: barcelona1,
     img2: barcelona2,
     img3: barcelona3,
     img4: barcelona4,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.90m',
     diametro: '1.50m',
     Tipodelampara: 'Led de 14W',
@@ -251,11 +263,17 @@ const dataArray =[
     {
     id: 6,
     nombre: 'Bimbaum',
+    
     img: bimbaum,
+    img1: bimbaum,
+    img2: bimbaum,
+    img3: bimbaum,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.30m',
     diametro: 'nn',
     Tipodelampara: 'Led',
@@ -266,13 +284,17 @@ const dataArray =[
     {
     id: 7,
     nombre: 'bruno',
+    
     img: bruno,
     img1: bruno1,
     img2: bruno2,
+    img3: bruno1,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.20m',
     diametro: 'nn',
     Tipodelampara: 'Con filamento de carbono',
@@ -283,12 +305,17 @@ const dataArray =[
     {
     id: 8,
     nombre: 'Butler',
+
     img: butler,
     img1: butler1,
+    img2: butler,
+    img3: butler1,
+
     categoria: "escritorio",
     portada: true,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '65cm',
     diametro: '25cm',
     Tipodelampara: 'Led',
@@ -299,11 +326,17 @@ const dataArray =[
     {
     id: 9,
     nombre: 'Byung',
+
     img: byung,
+    img1: byung,
+    img2: byung,
+    img3: byung,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '30cm',
     diametro: '18 x 16cm',
     Tipodelampara: 'nn',
@@ -314,14 +347,17 @@ const dataArray =[
     {
     id: 10,
     nombre: 'Charles',
+
     img: charles,
     img1: charles1,
     img2: charles2,
     img3: charles3,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.50m',
     diametro: '44cm',
     Tipodelampara: 'Led',
@@ -332,12 +368,17 @@ const dataArray =[
     {
     id: 11,
     nombre: 'Ciceron',
+
     img: ciceron,
     img1: ciceron1,
+    img2: ciceron,
+    img3: ciceron1,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.90m a 1.50m',
     diametro: '0.20 x 0.18',
     Tipodelampara: 'Led',
@@ -348,12 +389,17 @@ const dataArray =[
     {
     id: 12,
     nombre: 'Copernico',
+    
     img: copernico,
     img1: copernico1,
+    img2: copernico,
+    img3: copernico1,
+    
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.65m',
     diametro: '0.45 x 0.31 x 0.40cm',
     Tipodelampara: 'Led',
@@ -364,14 +410,17 @@ const dataArray =[
     {
     id: 13,
     nombre: 'Dogones',
+
     img: dogones,   
     img1: dogones1,   
     img2: dogones2,   
-    img3: dogones3,   
+    img3: dogones3,  
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '25cm',
     diametro: '10 x 15cm',
     Tipodelampara: 'nn',
@@ -382,13 +431,17 @@ const dataArray =[
     {
     id: 14,
     nombre: 'Francis',
+
     img: francis,
     img1: francis1,
     img2: francis2,
+    img3: francis1,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '55cm',
     diametro: '25cm',
     Tipodelampara: 'Led',
@@ -399,12 +452,17 @@ const dataArray =[
     {
     id: 15,
     nombre: 'FrancisDos',
+
     img: francisDos,
     img1: francisDos1,
+    img2: francisDos,
+    img3: francisDos1,
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '74cm',
     diametro: '22 x 20cm',
     Tipodelampara: 'nn',
@@ -415,12 +473,17 @@ const dataArray =[
     {
     id: 16,
     nombre: 'Galileo',
+
     img: galileo,
     img1: galileo1,
+    img2: galileo,
+    img3: galileo1,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.50m',
     diametro: '44cm',
     Tipodelampara: 'Led',
@@ -431,13 +494,17 @@ const dataArray =[
     {
     id: 17,
     nombre: 'Gayatri',
+
     img: gayatri,
     img1: gayatri1,
     img2: gayatri2,
+    img3: gayatri1,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.67m',
     diametro: 'nn',
     Tipodelampara: 'Led',
@@ -448,12 +515,17 @@ const dataArray =[
     {
     id: 18,
     nombre: 'George',
+
     img: george,
     img1: george1,
+    img2: george,
+    img3: george1,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.76m',
     diametro: '0.45 x 0.31 x 0.40cm',
     Tipodelampara: 'Led',
@@ -464,12 +536,17 @@ const dataArray =[
     {
     id: 19,
     nombre: 'Habernas',
+
     img: habernas,
     img1: habernas1,
+    img2: habernas,
+    img3: habernas1,
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '65cm',
     diametro: '25cm',
     Tipodelampara: 'nn',
@@ -480,12 +557,17 @@ const dataArray =[
     {
     id: 20,
     nombre: 'Hegel',
+
     img: hegel,
     img1: hegel1,
+    img2: hegel,
+    img3: hegel1,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '60cm',
     diametro: '14 x 12cm',
     Tipodelampara: 'nn',
@@ -496,13 +578,17 @@ const dataArray =[
     {
     id: 21,
     nombre: 'Heraclito',
+
     img: heraclito,
     img1: heraclito1,
-    img2: heraclito2,
+    img2: heraclito,
+    img3: heraclito2,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.20m',
     diametro: 'nn',
     Tipodelampara: 'Led',
@@ -513,13 +599,17 @@ const dataArray =[
     {
     id: 22,
     nombre: 'Hobbes',
+
     img: hobbes,
     img1: hobbes1,
-    img2: hobbes2,
+    img2: hobbes,
+    img3: hobbes2,
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '55cm',
     diametro: '18 x 15cm',
     Tipodelampara: 'nn',
@@ -530,12 +620,17 @@ const dataArray =[
     {
     id: 23,
     nombre: 'Inmanuel',
+
     img: inmanuel,
     img1: inmanuel1,
+    img2: inmanuel,
+    img3: inmanuel1,
+    
     categoria: "infantil",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '40cm',
     diametro: '16 x 15cm',
     Tipodelampara: 'nn',
@@ -546,12 +641,17 @@ const dataArray =[
     {
     id: 24,
     nombre: 'Jhon Locke',
+
     img: jhonLocke,
     img1: jhonLocke1,
+    img2: jhonLocke,
+    img3: jhonLocke1,
+
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.67m',
     diametro: '0.39 x 0.25cm',
     Tipodelampara: 'Led',
@@ -562,14 +662,17 @@ const dataArray =[
     {
     id: 25,
     nombre: 'Judith',
+
     img: judith,
     img1: judith1,
     img2: judith2,
     img3: judith3,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.39m',
     diametro: 'nn',
     Tipodelampara: 'nn',
@@ -580,12 +683,17 @@ const dataArray =[
     {
     id: 26,
     nombre: 'Jurgen',
+
     img: jurgen,
     img1: jurgen1,
+    img2: jurgen,
+    img3: jurgen1,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.34m',
     diametro: 'nn',
     Tipodelampara: 'nn',
@@ -596,13 +704,17 @@ const dataArray =[
     {
     id: 27,
     nombre: 'Maquiavelo',
+
     img: maquiavelo,
     img1: maquiavelo1,
-    img2: maquiavelo2,
+    img2: maquiavelo,
+    img3: maquiavelo2,
+    
     categoria: "lampara de pie",
     portada: true,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.90m a 1.50m',
     diametro: '0.20 x 0.18',
     Tipodelampara: 'Led',
@@ -613,11 +725,17 @@ const dataArray =[
     {
     id: 28,
     nombre: 'Martha',
+
     img: martha,
+    img2: martha,
+    img3: martha,
+    img4: martha,
+    
     categoria: "colgante",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.10m x 0.70m',
     diametro: 'nn',
     Tipodelampara: 'Dicroica',
@@ -628,11 +746,17 @@ const dataArray =[
     {
     id: 29,
     nombre: 'Michel',
+
     img: michel,
+    img1: michel,
+    img2: michel,
+    img3: michel,
+    
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.62m',
     diametro: '44 x 23cm',
     Tipodelampara: 'Led',
@@ -643,11 +767,17 @@ const dataArray =[
     {
     id: 30,
     nombre: 'Nasbaumm',
+    
     img: nasbaumm,
+    img1: nasbaumm,
+    img2: nasbaumm,
+    img3: nasbaumm,
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '0.46m',
     diametro: 'nn',
     Tipodelampara: 'Led',
@@ -658,11 +788,17 @@ const dataArray =[
     {
     id: 31,
     nombre: 'Noam',
+    
     img: noam,
+    img1: noam,
+    img2: noam,
+    img3: noam,
+    
     categoria: "escritorio",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '52cm',
     diametro: '30 x 10cm',
     Tipodelampara: 'nn',
@@ -673,11 +809,17 @@ const dataArray =[
     {
     id: 32,
     nombre: 'Pitagora',
+
     img: pitagora,
+    img1: pitagora,
+    img2: pitagora,
+    img3: pitagora,
+    
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.55m',
     diametro: '44cm',
     Tipodelampara: 'Led',
@@ -688,14 +830,17 @@ const dataArray =[
     {
     id: 33,
     nombre: 'Platon',
+
     img: platon,
     img1: platon1,
     img2: platon2,
     img3: platon3,
+
     categoria: "lampara de pie",
     portada: false,
     stock: 18,
     precio: 16040,
+    caracteristica: "lampara elaborada en Cedro - ........................",
     alto: '1.25 m',
     diametro: '35 cm',
     Tipodelampara: 'Led',

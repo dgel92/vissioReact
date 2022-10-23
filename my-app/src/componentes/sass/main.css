@@ -177,6 +177,19 @@ svg {
   color: #292828;
 }
 
+@media (max-width: 1500) {
+  .navlineaNegrita {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    max-width: 100%;
+  }
+  .navcontainer {
+    all: unset;
+  }
+}
+
 .contenedor-productos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +263,7 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .logoFooter {
@@ -474,6 +487,10 @@ svg {
   line-height: 1.6;
 }
 
+.carousel-portada2 {
+  margin: 15vh 2vh 20vh 2vh;
+}
+
 /* 
 c-img = img-portada
 txt = txt
@@ -623,7 +640,6 @@ txt = txt
   display: -ms-flexbox;
   display: flex;
   margin-top: 10vh;
-  margin-left: 10vh;
 }
 
 .detail-card {
@@ -634,7 +650,7 @@ txt = txt
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0vh 0vh 0vh 40vh;
+  margin: 10vh 0vh 0vh 40vh;
 }
 
 .detail-card .detail-name {
@@ -654,9 +670,8 @@ txt = txt
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 480px;
-  height: 200px;
-  border: 2px solid red;
+  width: 50vh;
+  height: 20vh;
 }
 
 .count-container {
@@ -668,7 +683,7 @@ txt = txt
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
-  height: auto;
+  height: 200px;
   border: 2px solid blue;
   text-align: center;
   -webkit-box-align: center;
@@ -680,25 +695,165 @@ txt = txt
 }
 
 .count-container span {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.count-container .count-card button {
-  width: 8vh;
+.count-container .count-card a {
+  width: 18vh;
   height: 5.5vh;
-  border-radius: 20px;
   margin-left: 1vh;
   margin-right: 1vh;
   margin-bottom: 3vh;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
-.count-container .count-add button {
-  width: 16vh;
+.count-container .agregarCarrito {
+  width: 20vh;
   height: 6vh;
-  border-radius: 20px;
-  font-size: 1.3rem;
-  font-weight: 400;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  font-weight: 500;
+}
+
+.count-container .irAlCarrito {
+  width: 20vh;
+  height: 6vh;
+}
+
+.carouselItem-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 520px;
+  height: 690px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10vh;
+  margin-left: 20vh;
+  border: 2px solid red;
+}
+
+.cartView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 82%;
+  height: 100vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 9%;
+}
+
+.button-volver {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cartView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 82%;
+  height: 100vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 9%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 82%;
+  height: auto;
+}
+
+.container h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+.precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.precio h3 {
+  font-size: 1.2rem;
+}
+
+.precio h4 {
+  font-size: 1rem;
+}
+
+.buttonEliminar {
+  width: 12vh;
+  height: 4vh;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.buttonEliminar:hover {
+  color: #af3737;
+  background-color: rgba(184, 17, 17, 0.685);
+}
+
+.vaciarCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: auto;
+  height: auto;
+}
+
+.vaciarCarrito Button {
+  width: 200px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

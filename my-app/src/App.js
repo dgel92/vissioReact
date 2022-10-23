@@ -15,6 +15,9 @@ import TenesUnaTienda from './componentes/tenesUnaTienda/tenesUnaTienda';
 import EnviosYDevoluciones from './componentes/pedidosEnviosYDevoluciones/PedidosEnviosYDevoluciones';
 import AvisoLegal from './componentes/AvisosLegales/AvisosLegales';
 import Privacidad from './componentes/privacidad/Privacidad';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Checkout from './componentes/checkOut/CheckOut';
 
 function App() {
   return (
@@ -39,6 +42,8 @@ function App() {
                 <Route path="/PrivacidadYCookies" element={<Privacidad/>}/>
 
                 <Route path="/Producto/:productoid" element={<ItemDetailContainer/>}/>
+                <Route path="/Checkout" element={<Checkout/>}/>
+              
               </Routes>
             <Footer/>
         </BrowserRouter>

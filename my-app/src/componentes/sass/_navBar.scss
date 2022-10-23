@@ -60,3 +60,19 @@
         }
     }
 }
+
+
+
+@media (max-width: 1500) {
+    .navlineaNegrita{
+        display:flex;
+        width: auto;
+        max-width: 100%;
+
+    }
+
+    .navcontainer{
+        all: unset;
+        }
+
+}

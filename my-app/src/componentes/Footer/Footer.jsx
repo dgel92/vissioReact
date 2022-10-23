@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 function Footer(){
     return(
         <>
+        <hr/>
         <section className="cardFooter">
             <div className="logoFooter">
                 <img src={Logo} alt="logo tienda"/>
