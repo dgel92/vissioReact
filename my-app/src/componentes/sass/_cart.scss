@@ -4,7 +4,7 @@
     width: 82%;
     height: 100vh;
     margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     margin-left:9%;
 }
 
@@ -52,10 +52,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 2vh;
         
         h3{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         h4{
@@ -87,5 +87,19 @@
     Button{
         width: 200px;
         height: 50px;
+    }
+}
+
+.cart-title{
+    display:flex;
+    flex-direction: row;
+    margin: 2vh;
+    width: auto;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    h2{
+        margin-left: 30px;
     }
 }

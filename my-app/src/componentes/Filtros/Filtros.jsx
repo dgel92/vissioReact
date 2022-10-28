@@ -14,14 +14,14 @@ function Filtros() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item><Link to="/tienda/lampara de pie">Lamparas de pie</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/escritorio">Lamparas de escritorio</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/colgante">Lamparas Colgantes</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/infantil">Lamparas Infantiles</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/lampara de pie" className="btnBorrar">Lamparas de pie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/escritorio" className="btnBorrar">Lamparas de escritorio</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/colgante" className="btnBorrar">Lamparas Colgantes</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/infantil" className="btnBorrar">Lamparas Infantiles</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             
-            <Button variant="secondary"><Link to="/tienda">Borrar Filtros</Link></Button>
+            <Button variant="secondary"><Link to="/tienda" className="btnBorrar">Borrar Filtros</Link></Button>
         </div>
         </>
     );

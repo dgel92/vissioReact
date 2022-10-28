@@ -3,7 +3,7 @@ import useCartContext from '../CartContext/CartContext'
 import {Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 function CartView(){
-    const {cart, removeFromCart, clearCart} = useCartContext();
+    const {cart, removeFromCart, clearCart, calcPriceCart} = useCartContext();
     console.log("CART", cart)
 
     if(cart.length === 0){
@@ -18,8 +18,10 @@ function CartView(){
         return <div className="cartView">
             {cart.map(itemCart =>{
             return <div className="container" key={itemCart.id}>
-                <h2>Lampara {itemCart.nombre}</h2>
-                <hr/>
+                <div className="cart-title">
+                    <img style={{width: '4rem'}} src={itemCart.img} alt={itemCart.nombre}/>
+                    <h2>Lampara {itemCart.nombre}</h2>
+                </div>
                 <div className="precio">
                     <h2>Cantidad: {itemCart.cant}</h2>
                     <h2>Costo unitario: ${itemCart.precio}</h2>

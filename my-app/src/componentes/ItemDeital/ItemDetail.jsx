@@ -64,7 +64,7 @@ const {addToCart}= useCartContext();
                         </Card.Text>
                         <h4>Dimensiones<br/></h4>
                         <Card.Text className="detail-caracteristica">
-                            <h4>{dataArrayEstado.alto}</h4><br/> 
+                            <h4>{dataArrayEstado.alto}</h4><br/>
                             <h4>{dataArrayEstado.diametro}</h4>
                         </Card.Text>
                         <br/>
