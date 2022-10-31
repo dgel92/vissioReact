@@ -230,7 +230,6 @@ svg {
   padding: 5% 10% 5% 10%;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid red;
 }
 
 .product-card {
@@ -409,6 +408,10 @@ svg {
   }
 }
 
+* {
+  max-width: 100%;
+}
+
 .img-tienda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +422,7 @@ svg {
           flex-direction: row;
   margin-left: 2%;
   margin-right: 2%;
+  max-width: 100%;
 }
 
 .img-portada {
@@ -509,15 +513,43 @@ svg {
   line-height: 1.6;
 }
 
-.carousel-portada2 {
-  margin: 15vh 2vh 20vh 2vh;
-}
-
 /* 
 c-img = img-portada
 txt = txt
 
 */
+.carousel-portada2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: auto;
+  height: auto;
+}
+
+.carousel-portada2 .cardimg {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  width: 500px;
+}
+
 .sobreNosotros-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,7 +693,8 @@ txt = txt
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10vh;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
 }
 
 .detail-card {
@@ -718,40 +751,36 @@ txt = txt
 }
 
 .count-container .count-title {
-  margin-bottom: -20px;
   margin-top: 10px;
   font-size: 1.8rem;
   letter-spacing: 1.5px;
   font-weight: 600;
 }
 
-.count-container span {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 .count-container .count-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2vh;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 150px;
-  height: 6vh;
+  width: auto;
+  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .count-container .count-card .botonCounter {
+  width: 5vh;
+  height: auto;
+  border-radius: 15px;
   list-style: none;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 3rem;
-  color: rgba(92, 92, 92, 0.795);
+  margin: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -761,6 +790,12 @@ txt = txt
   color: black;
 }
 
+.count-container .count-card .count-contador {
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .count-container .count-add {
   margin-bottom: 1vh;
 }
@@ -768,6 +803,7 @@ txt = txt
 .count-container .count-add .agregarCarrito {
   width: 20vh;
   height: 8vh;
+  margin-top: 10px;
   border-radius: 10px;
   font-size: 1.1rem;
   letter-spacing: .03em;
@@ -934,5 +970,21 @@ txt = txt
 
 .cart-title h2 {
   margin-left: 30px;
+}
+
+.cart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0px 60px 0px;
 }
 /*# sourceMappingURL=main.css.map */

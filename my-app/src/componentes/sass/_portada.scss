@@ -1,8 +1,12 @@
+*{
+    max-width: 100%;
+}
 .img-tienda{
     display:flex;
     flex-direction: row;
     margin-left: 2%;
     margin-right: 2%;
+    max-width: 100%;
 }
 
 .img-portada{
@@ -80,11 +84,29 @@ img{
     }
 }
 
-.carousel-portada2{
-    margin:15vh 2vh 20vh 2vh;
-}
 /* 
 c-img = img-portada
 txt = txt
 
 */
+
+.carousel-portada2{
+    display:flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+
+    .cardimg{
+        justify-content: center;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        width: 500px;
+        }
+    }
+
