@@ -27,9 +27,6 @@ function DarkVariantExample() {
                     <Card>
                         <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
                     </Card>
-                    <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
-                    </Card>
                 </CardGroup>
             </Carousel.Item>
         
@@ -46,9 +43,6 @@ function DarkVariantExample() {
                     <Card>
                         <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
                     </Card>
-                    <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
-                    </Card>
                 </CardGroup>
             </Carousel.Item>
 
@@ -62,9 +56,6 @@ function DarkVariantExample() {
                         <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
                     </Card>
 
-                    <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
-                    </Card>
                     <Card>
                         <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
                     </Card>

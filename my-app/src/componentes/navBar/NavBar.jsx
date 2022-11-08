@@ -4,7 +4,10 @@ import Logo from '../../multimedia/logoSitio3.png';
 import CartWidget from '../CartWidget.jsx/CartWidget';
 import {Link} from "react-router-dom";
 import useCartContext from '../CartContext/CartContext';
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 function NavBar(){
@@ -12,23 +15,25 @@ function NavBar(){
     contextFunction();
     return(
         <>
-            <div class="navlineaNegrita"><p>Envios a todo el pais - </p></div>
-                <header class="navcontainer">
-                        <Link to="/" class="brand"><img width="260" src={Logo} alt="logo tienda"/></Link>
-                        <nav id="nav">
-                            <section class="navbar">
-                                <div class="menuNav">
-                                    <ul class="menu">
-                                        <li><Link to="/">Inicio</Link></li>
-                                        <li><Link to="/tienda">Tienda</Link></li>
-                                        <li><Link to="/sobreNosotros">Sobre nosotros</Link></li>
-                                    </ul>
-                                </div>
-                            </section>
-                        </nav>
-                        <div><CartWidget/></div>
-                </header>
-        </>
-        )}
-
+        <div className="navlineaNegrita"><p>Envios a todo el pais - </p></div>
+            <div className='navContainer'>
+                <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+                    <Navbar.Brand className="brand"><Link to="/"><img width="260" src={Logo} alt="logo tienda"/></Link></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <div className="navCard">
+                        <Navbar.Collapse id="responsive-navbar-nav">                
+                            <Nav>
+                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown" >
+                                <NavDropdown.Item><a><Link to="/">Inicio</Link></a></NavDropdown.Item>
+                                <NavDropdown.Item><a><Link to="/tienda">Tienda</Link></a></NavDropdown.Item>
+                                <NavDropdown.Item><a><Link to="/sobreNosotros">Sobre nosotros</Link></a></NavDropdown.Item>                    
+                            </NavDropdown>
+                            </Nav>
+                            <NavDropdown.Item><Link to="/cart">Carrito</Link></NavDropdown.Item>
+                        </Navbar.Collapse>
+                    </div>
+                </Navbar>
+            </div>
+    </>
+)}
 export default NavBar

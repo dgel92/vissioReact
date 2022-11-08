@@ -1,4 +1,6 @@
 import Brand from "../../multimedia/brand-carrousel.jpg"
+import Brand2 from "../../multimedia/brand-carrousel-2.jpg"
+import Brand3 from "../../multimedia/brand-carrousel-3.jpg"
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,12 +17,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                 
                 <Carousel.Item>
                     <img
-                    className="d-block w-100" src={Brand} alt="Second slide"/>
+                    className="d-block w-100" src={Brand2} alt="Second slide"/>
                     <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
                 
                 <Carousel.Item>
-                    <img className="d-block w-100" src={Brand} alt="Third slide"/>
+                    <img className="d-block w-100" src={Brand3} alt="Third slide"/>
                     <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

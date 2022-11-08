@@ -34,3 +34,85 @@
     list-style: none;
     text-decoration: none;
 }
+
+@media (max-width: 1008px){
+    .filtros{
+        display:flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 40px;
+        list-style: none;
+        text-decoration: none;
+        
+    }
+    
+    
+    .btnFiltro{
+        padding-right: 30px ;
+    }
+    
+    .btnBorrar{
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .btnBorrar:hover{
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 400px){
+    .filtros{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+
+        list-style: none;
+        text-decoration: none;
+        
+    }
+    
+    
+    .btnFiltro{
+        display:block;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .btnselect{
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .btnselect:hover{
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+}

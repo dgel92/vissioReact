@@ -16,63 +16,159 @@
     }
 }
 
-.navcontainer{
+.navContainer{
     display:flex;
+    flex-direction: row-reverse;
+    padding-right: 5vh;
     width: 100%;
-    height: 15vh;
-    padding: 20px;
-    color: black;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(231, 231, 231, 0.301);
-
-    .brand{
-        color: black;
-        text-decoration: none;
-        width: auto;
-        height: auto;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 2rem;
-    } 
-
-    .menuNav{
-        display:Flex;
-        flex-direction: row-reverse;
-        width: 120vh;
-        height: auto;
-
-
-        .menu{
-            display:flex;
-            flex-direction: row;
-        }
-
-        a{
-            margin-left: 50px;
-            list-style: none;
-            text-decoration: none;
-            font-size: 1.3rem;
-            color: black;
-        }
-
-        a:hover{
-            color: rgb(41, 40, 40);
-        }
-    }
+    border: 2px solid blue;
 }
 
+.navCard{
+    display:flex;
+    border: 2px solid red;
+    width: auto;
+    padding-left: 100vh;
+}
 
-
-@media (max-width: 1500) {
+@media (max-width: 1475px){
     .navlineaNegrita{
         display:flex;
-        width: auto;
-        max-width: 100%;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    
+        p{
+            display:flex;
+            width: 100%;
+            padding-top: 10px;
+            color:white;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 0.9rem;
+        }
+    }
+    
+    .navcontainer{
+        padding: 30px 30px 30px 30px;
+    
+        .brand{
+            display:flex;
+            border:2px solid orange;
+            width: 260px;
+            margin-left: 30px;
+            justify-content: center;
+            height: auto;
+        }
+    
+        li{
+            margin-left: auto;
+            padding-right: 50px;
+            align-items: center;
+            list-style:none;
+            text-decoration: none;
+    
+                a{
+                    font-size: 1rem;
+                    list-style:none;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+        }
+        
+    }
+}
 
+
+@media (max-width: 1100px){
+    .navlineaNegrita{
+        display:flex;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    
+        p{
+            display:flex;
+            width: 100%;
+            padding-top: 10px;
+            color:white;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 0.9rem;
+        }
+    }
+    
+    .navcontainer{
+        padding: 30px 30px 30px 30px;
+    
+        .brand{
+            display:flex;
+            border:2px solid orange;
+            width: 220px;
+            margin-left: 30px;
+            justify-content: center;
+            height: auto;
+        }
+    
+        li{
+            margin-left: auto;
+            padding-right: 30px;
+            align-items: center;
+            list-style:none;
+            text-decoration: none;
+    
+                a{
+                    font-size: 1rem;
+                    list-style:none;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+        }
+        
+    }
+}
+
+@media (max-width: 720){
+    .navlineaNegrita{
+        all:unset;
+    
+    .navcontainer{
+        padding: 30px 30px 30px 30px;
+    
+        .brand{
+            display:flex;
+            border:2px solid orange;
+            width: 220px;
+            margin-left: 80px;
+            justify-content: center;
+            height: auto;
+        }
+    
+        li{
+            margin-left: auto;
+            padding-right: 50px;
+            align-items: center;
+            list-style:none;
+            text-decoration: none;
+    
+                a{
+                    font-size: 1rem;
+                    list-style:none;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+        }
+        
     }
 
-    .navcontainer{
-        all: unset;
-        }
+}}
 
-}
+

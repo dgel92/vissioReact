@@ -10,13 +10,13 @@ function Footer(){
         <hr/>
         <section className="cardFooter">
             <div className="logoFooter">
-                <img src={Logo} alt="logo tienda"/>
+                <img src={Logo} className="logoFooterImg" alt="logo tienda"/>
             </div>
             <div className="footer-text"><a>Siguenos</a></div>
                 <div className="footerMenu">
-                    <li><a href="https://wa.me/5493514597445"><Icon icon="logos:whatsapp-icon" height="50"/></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100066980554240"><Icon icon="logos:facebook" height="50"/></a></li>
-                    <li><a href="https://www.instagram.com/vissio_lamparas/"><Icon icon="ant-design:instagram-outlined" color="black" height="60"/></a></li>
+                    <li><a href="https://wa.me/5493514597445"><Icon icon="logos:whatsapp-icon" height="45"/></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100066980554240"><Icon icon="logos:facebook" height="40"/></a></li>
+                    <li><a href="https://www.instagram.com/vissio_lamparas/"><Icon icon="ant-design:instagram-outlined" color="black" height="50"/></a></li>
                 </div>
             <hr></hr>
                 <div className="footer-text"><a>Ayuda</a></div>

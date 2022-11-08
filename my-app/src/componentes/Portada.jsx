@@ -1,5 +1,6 @@
 import React from 'react'
 import '../componentes/sass/main.css';
+import tienda1 from '../multimedia/brandTienda-2.jpg';
 import tienda from '../multimedia/tienda.jpg';
 import {Link} from "react-router-dom";
 import Carrousel from '../componentes/Carrousel/Carrousel';
@@ -17,7 +18,7 @@ function ItemPortada() {
     <Carrousel/>
         <section className='img-tienda' >
             <div className='img-portada'>
-                <Link to="/tienda" onClick={()=>{pulsar()}}><img src={tienda} alt="" className='img-box1'/></Link>
+                <Link to="/tienda" onClick={()=>{pulsar()}}><img src={tienda1} alt="" className='img-box1'/></Link>
                 <div className='txt'><h5>Tienda</h5></div>
             </div>
             <div className='img-portada'>
@@ -26,7 +27,7 @@ function ItemPortada() {
             </div>
         </section>
         <div className="text-portada">
-            <h2>Objetos con alma, duraderos, funcionaless y sostenibles</h2>
+            <h2>Objetos con alma, duraderos, funcionales y sostenibles.</h2>
         </div>
         <section className='img-portada'>
             <Link to="/sobreNosotros"><img src={tienda} alt="" className='img-box2'/></Link>

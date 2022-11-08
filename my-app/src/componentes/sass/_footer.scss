@@ -8,12 +8,19 @@
 .logoFooter{
     display:flex;
     flex-direction: column;
-    width: 400px;
-    height: 400px;
-    justify-content: center;
+    width: auto;
     height: auto;
-    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     padding: 20px;
+
+    .logoFooterImg{
+        width: 400px;
+        height: auto;
+    }
 }
 
 .footer-text{
@@ -66,24 +73,162 @@
     font-size: 0.85rem;
 }
 
-@media(min-width: 770px){
+@media(max-width: 1020px){
     .cardFooter{
-        display:flex;
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
+        margin-top: 10vh;
     }
     
     
     .logoFooter{
-        display:none;
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        padding: 20px;
+    
+        .logoFooterImg{
+            width: 300px;
+            height: auto;
+        }
     }
-
-    .footer-bg{
+    
+    .footer-text{
+        font-size: 1rem;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footerMenu{
         display:flex;
         flex-direction: row;
+        width: 100%;
+        height: 12vh;
+        padding: 10px 60px 10px 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    
+    .footerlist{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px 60px 10px 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        li{
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 0.8rem;
+        }
+    }
+    
+    .footerFinal{
+        display:flex;
+        width: auto;
+        height: 3vh;
+        background: black;
+    }
+    
+    .links{
+        color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+    :hover.links{
+        color:black;
+        font-size: 0.85rem;
+    }
+    
+}
+@media(max-width: 375px){
+    .cardFooter{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    
+    
+    .logoFooter{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        padding: 20px;
+    
+        .logoFooterImg{
+            width: 300px;
+            height: auto;
+        }
+    }
+    
+    .footer-text{
+        font-size: 1rem;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footerMenu{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px 0px 20px 0px;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    
+    }
+    
+    .footerlist{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px 60px 10px 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        li{
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 0.8rem;
+        }
+    }
+    
+    .footerFinal{
+        display:flex;
+        width: auto;
+        height: 3vh;
+        background: black;
+    }
+    
+    .links{
+        color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+    :hover.links{
+        color:black;
+        font-size: 0.85rem;
     }
     
 }

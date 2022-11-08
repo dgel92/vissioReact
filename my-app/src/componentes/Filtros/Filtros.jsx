@@ -14,10 +14,10 @@ function Filtros() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item><Link to="/tienda/lampara de pie" className="btnBorrar">Lamparas de pie</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/escritorio" className="btnBorrar">Lamparas de escritorio</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/colgante" className="btnBorrar">Lamparas Colgantes</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to="/tienda/infantil" className="btnBorrar">Lamparas Infantiles</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/lampara de pie" className="btnselect">Lamparas de pie</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/escritorio" className="btnselect">Lamparas de escritorio</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/colgante" className="btnselect">Lamparas Colgantes</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to="/tienda/infantil" className="btnselect">Lamparas Infantiles</Link></Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             
