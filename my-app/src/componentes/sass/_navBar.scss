@@ -16,159 +16,42 @@
     }
 }
 
+.brand{
+    width:290px;
+    margin-left: 20px;
+}
+
+.btnClose{
+    padding: 20px;
+}
+
 .navContainer{
     display:flex;
-    flex-direction: row-reverse;
-    padding-right: 5vh;
+}
+
+.navView{
+    position: relative;
+    top: 50px;
     width: 100%;
-    border: 2px solid blue;
-}
 
-.navCard{
-    display:flex;
-    border: 2px solid red;
-    width: auto;
-    padding-left: 100vh;
-}
+    .navCard{
+        display: flex;
 
-@media (max-width: 1475px){
-    .navlineaNegrita{
-        display:flex;
-        width: 100%;
-        height: 50px;
-        background-color: black;
-    
-        p{
-            display:flex;
-            width: 100%;
-            padding-top: 10px;
-            color:white;
-            text-align: center;
-            justify-content: center;
-            justify-items: center;
-            font-size: 0.9rem;
-        }
-    }
-    
-    .navcontainer{
-        padding: 30px 30px 30px 30px;
-    
-        .brand{
-            display:flex;
-            border:2px solid orange;
-            width: 260px;
-            margin-left: 30px;
-            justify-content: center;
-            height: auto;
-        }
-    
-        li{
-            margin-left: auto;
-            padding-right: 50px;
-            align-items: center;
-            list-style:none;
-            text-decoration: none;
-    
-                a{
-                    font-size: 1rem;
-                    list-style:none;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                }
-        }
+        a{
+        font-size: 1rem;
+        list-style:none;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        margin-left: 5px;
+        letter-spacing: 1.7px;
+        font-size: 1.2rem;
         
+            &:hover{
+                color: rgb(189, 62, 62);
+            }
+        }
     }
 }
-
-
-@media (max-width: 1100px){
-    .navlineaNegrita{
-        display:flex;
-        width: 100%;
-        height: 50px;
-        background-color: black;
-    
-        p{
-            display:flex;
-            width: 100%;
-            padding-top: 10px;
-            color:white;
-            text-align: center;
-            justify-content: center;
-            justify-items: center;
-            font-size: 0.9rem;
-        }
-    }
-    
-    .navcontainer{
-        padding: 30px 30px 30px 30px;
-    
-        .brand{
-            display:flex;
-            border:2px solid orange;
-            width: 220px;
-            margin-left: 30px;
-            justify-content: center;
-            height: auto;
-        }
-    
-        li{
-            margin-left: auto;
-            padding-right: 30px;
-            align-items: center;
-            list-style:none;
-            text-decoration: none;
-    
-                a{
-                    font-size: 1rem;
-                    list-style:none;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                }
-        }
-        
-    }
-}
-
-@media (max-width: 720){
-    .navlineaNegrita{
-        all:unset;
-    
-    .navcontainer{
-        padding: 30px 30px 30px 30px;
-    
-        .brand{
-            display:flex;
-            border:2px solid orange;
-            width: 220px;
-            margin-left: 80px;
-            justify-content: center;
-            height: auto;
-        }
-    
-        li{
-            margin-left: auto;
-            padding-right: 50px;
-            align-items: center;
-            list-style:none;
-            text-decoration: none;
-    
-                a{
-                    font-size: 1rem;
-                    list-style:none;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                }
-        }
-        
-    }
-
-}}
-
-
