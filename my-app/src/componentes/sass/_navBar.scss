@@ -29,10 +29,19 @@
     display:flex;
 }
 
+.navQuery{
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
 .navView{
+    display:flex;
+    flex-direction: column;
     position: relative;
     top: 50px;
-    width: 100%;
+    width: 90%;
 
     .navCard{
         display: flex;
@@ -54,4 +63,37 @@
             }
         }
     }
+}
+
+@media (max-width: 410px){
+
+    .brand{
+        width:220px;
+        margin-left: 0px;
+    }
+
+
+    .navmediaQuery{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navQuery{
+        display:flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 3200px){
+
+    .brand{
+        width:200px;
+        margin-left: 0px;
+    }
+
 }

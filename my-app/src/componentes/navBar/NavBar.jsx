@@ -16,11 +16,11 @@ function NavBar(){
     contextFunction();
     return(
         <>
-        <div>
+        <div className='navmediaQuery'>
             <div className="navlineaNegrita"><p>Envios a todo el pais - </p></div>
                 {[false].map((expand) => (
                     <Navbar key={expand} bg="light" expand={expand} className="mb-3 navContainer">
-                        <Container fluid> 
+                        <Container fluid > 
                             <Navbar.Brand><Link to="/"><img className='brand' src={Logo} alt="logo tienda"/></Link></Navbar.Brand>
                             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                             <Navbar.Offcanvas className='btnClose'
@@ -34,7 +34,7 @@ function NavBar(){
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                                 <div className='navView'>
-                                    <Offcanvas.Body>
+                                    <Offcanvas.Body className="navQuery">
                                         <Nav className="justify-content-end flex-grow-1 pe-3">
                                         <Nav.Link className="navCard"><a><Link to="/">Inicio</Link></a></Nav.Link>
                                         <Nav.Link className="navCard"><a><Link to="/tienda">Tienda</Link></a></Nav.Link>

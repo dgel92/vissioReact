@@ -38,18 +38,18 @@ const {addToCart}= useCartContext();
             <div className="carouselItem-Container">
                 <Carousel>
                     <Carousel.Item>
-                        <img variant="rop" style={{ width: '43rem' }} src={dataArrayEstado.img} alt={dataArrayEstado.nombre}/>
+                        <img variant="rop" style={{ width: '60vh' }} src={dataArrayEstado.img} alt={dataArrayEstado.nombre}/>
                         <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item>
                     
                     <Carousel.Item>
-                        <img variant="top" style={{ width: '43rem' }} src={dataArrayEstado.img2} alt={dataArrayEstado.nombre}/>
+                        <img variant="top" style={{ width: '60vh' }} src={dataArrayEstado.img2} alt={dataArrayEstado.nombre}/>
                         <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img variant="top" style={{ width: '43rem' }} src={dataArrayEstado.img3} alt={dataArrayEstado.nombre}/>
+                        <img variant="top" style={{ width: '60vh' }} src={dataArrayEstado.img3} alt={dataArrayEstado.nombre}/>
                         <Carousel.Caption>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -64,8 +64,8 @@ const {addToCart}= useCartContext();
                         </Card.Text>
                         <h4>Dimensiones<br/></h4>
                         <Card.Text className="detail-caracteristica">
-                            <h4>{dataArrayEstado.alto}</h4><br/>
-                            <h4>{dataArrayEstado.diametro}</h4>
+                            <h4>Altura: {dataArrayEstado.alto}</h4>
+                            <h4>Diametro: {dataArrayEstado.diametro}</h4>
                         </Card.Text>
                         <br/>
                         <Card.Text>

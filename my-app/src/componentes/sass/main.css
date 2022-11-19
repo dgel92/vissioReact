@@ -162,10 +162,11 @@ svg {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 7.5vh;
+  padding-top: 7.5vh;
   padding-left: 20%;
   padding-right: 20%;
   height: 100%;
+  max-width: 100%;
 }
 
 .formularioContacto h1 {
@@ -175,6 +176,7 @@ svg {
   font-family: "Be Vietnam", sans-serif;
   font-size: 3rem;
   letter-spacing: 0.08em;
+  border: 2px solid red;
 }
 
 .formularioContacto h4 {
@@ -185,6 +187,7 @@ svg {
   letter-spacing: 0.09em;
   font-family: "Roboto", sans-serif;
   font-weight: 550;
+  border: 2px solid red;
 }
 
 .imagenFormulario {
@@ -202,11 +205,115 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid red;
 }
 
 .form {
   margin-top: 2vh;
   margin-bottom: 4vh;
+  border: 2px solid red;
+}
+
+@media (max-width: 770px) {
+  .formularioContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 7.5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    max-width: 100%;
+  }
+  .formularioContacto h1 {
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.08em;
+    border: 2px solid red;
+  }
+  .formularioContacto h4 {
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1.4rem;
+    letter-spacing: 0.09em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    border: 2px solid red;
+  }
+  .imagenFormulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid red;
+  }
+  .form {
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 505px) {
+  .formularioContacto h1 {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    border: 2px solid red;
+  }
+  .formularioContacto h4 {
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1.2rem;
+    letter-spacing: 0.09em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 505px) {
+  .formularioContacto h1 {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    border: 2px solid red;
+  }
+  .formularioContacto h4 {
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1rem;
+    letter-spacing: 0.09em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    border: 2px solid red;
+  }
 }
 
 .navlineaNegrita {
@@ -248,10 +355,29 @@ svg {
   display: flex;
 }
 
+.navQuery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+
 .navView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 50px;
-  width: 100%;
+  width: 90%;
 }
 
 .navView .navCard {
@@ -275,6 +401,44 @@ svg {
 
 .navView .navCard a:hover {
   color: #bd3e3e;
+}
+
+@media (max-width: 410px) {
+  .brand {
+    width: 220px;
+    margin-left: 0px;
+  }
+  .navmediaQuery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navQuery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 3200px) {
+  .brand {
+    width: 200px;
+    margin-left: 0px;
+  }
 }
 
 .contenedor-productos {
@@ -1137,7 +1301,7 @@ svg {
 
 .sobreNosotros-tittle h4 {
   font-family: "Be Vietnam", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .sobreNosotros-text {
@@ -1147,6 +1311,92 @@ svg {
   margin-right: 10vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+@media (max-width: 920px) {
+  .sobreNosotros-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 2px solid red;
+  }
+  .sobreNosotros-imgPortada {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .sobreNosotros-tittle {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 2px solid blue;
+  }
+  .sobreNosotros-tittle h3 {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1.2rem;
+  }
+  .sobreNosotros-tittle h4 {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1.2rem;
+  }
+  .sobreNosotros-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 10vh;
+    margin-right: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 648px) {
+  .sobreNosotros-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 2px solid red;
+  }
+  .sobreNosotros-imgPortada {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .sobreNosotros-tittle {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 2px solid blue;
+  }
+  .sobreNosotros-tittle h3 {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1rem;
+  }
+  .sobreNosotros-tittle h4 {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1em;
+  }
+  .sobreNosotros-text {
+    font-family: "Roboto", sans-serif;
+    font-size: .8rem;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
 }
 
 .cuidados-container {
@@ -1248,8 +1498,10 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2vh;
+  max-width: 100%;
+  margin-top: 1vh;
   margin-bottom: 10vh;
+  border: 2px solid blue;
 }
 
 .detail-card {
@@ -1303,6 +1555,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid red;
 }
 
 .count-container .count-title {
@@ -1384,6 +1637,284 @@ svg {
   border: 2px solid red;
 }
 
+@media (max-width: 1450px) {
+  .detail-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+    border: 2px solid blue;
+  }
+  .detail-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid orange;
+    margin: 10vh 0vh 10vh 5vh;
+  }
+  .detail-card .detail-name {
+    font-size: 1.8rem;
+    font-weight: 450;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-precio {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-caracteristica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+  }
+  .carouselItem-Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 10vh;
+    width: 520px;
+    height: 690px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 1180px) {
+  .detail-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+    border: 2px solid blue;
+  }
+  .detail-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid orange;
+    margin: 10vh 0vh 10vh -15vh;
+  }
+  .detail-card .detail-name {
+    font-size: 1.8rem;
+    font-weight: 450;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-precio {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-caracteristica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+  }
+  .carouselItem-Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 20vh;
+    width: 520px;
+    height: 690px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 828px) {
+  .detail-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 2px solid green;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20vh;
+  }
+  .detail-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    margin-top: 3vh;
+  }
+  .detail-name {
+    font-size: 2rem;
+    font-weight: 450;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-precio {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-caracteristica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+}
+
+.count-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+
+.count-container .count-title {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.count-container .count-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.count-container .count-card .botonCounter {
+  width: 5vh;
+  height: auto;
+  border-radius: 15px;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.count-container .count-card .botonCounter:hover {
+  color: black;
+}
+
+.count-container .count-card .count-contador {
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.count-container .count-add {
+  margin-bottom: 1vh;
+}
+
+.count-container .count-add .agregarCarrito {
+  width: 20vh;
+  height: 8vh;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  font-weight: 500;
+}
+
+.count-container .count-add .irAlCarrito {
+  width: 20vh;
+  height: 6vh;
+}
+
+.count-container .carouselItem-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40vh;
+  width: 520px;
+  height: 690px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5vh;
+  border: 2px solid red;
+}
+
 .cartView {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1414,21 +1945,6 @@ svg {
           flex-direction: column;
 }
 
-.cartView {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  width: 82%;
-  height: 100vh;
-  margin-top: 7vh;
-  margin-bottom: 7vh;
-  margin-left: 9%;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1443,6 +1959,7 @@ svg {
   border-radius: 15px;
   width: 82%;
   height: auto;
+  border: 2px solid green;
 }
 
 .container h2 {
@@ -1461,7 +1978,7 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .precio h3 {
@@ -1541,5 +2058,137 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   margin: 60px 0px 60px 0px;
+}
+
+@media (max-width: 1100px) {
+  .cartView {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 70%;
+    height: 100vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .button-volver {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .cart-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 82%;
+    height: auto;
+    border: 2px solid green;
+  }
+  .container h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .precio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 1vh;
+  }
+  .precio h3 {
+    font-size: 1rem;
+  }
+  .precio h4 {
+    font-size: 1rem;
+  }
+  .buttonEliminar {
+    width: 12vh;
+    height: 4vh;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .buttonEliminar:hover {
+    color: #af3737;
+    background-color: rgba(184, 17, 17, 0.685);
+  }
+  .vaciarCarrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    height: auto;
+  }
+  .vaciarCarrito Button {
+    width: 200px;
+    height: 50px;
+  }
+  .cart-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2vh;
+    width: auto;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cart-title h2 {
+    margin-left: 30px;
+  }
+  .cart-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 60px 0px 60px 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

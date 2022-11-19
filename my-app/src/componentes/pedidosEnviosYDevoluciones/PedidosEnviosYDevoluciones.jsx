@@ -9,36 +9,34 @@ function EnviosYDevoluciones(){
                 <h1>Pedidos, envíos, cambios y devoluciones.</h1>
             </div>
             <div className="envios-txt">
-                <h5>Estas son las condiciones de uso que rigen nuestra Tienda Online. Al realizar una compra en www.vissio-lamparas.com formalizas un contrato con nosotros y te comprometes a aceptar estas condiciones de uso y los aspectos legales ampliados en el apartado “Aviso Legal” de esta web. Por favor, lee detenidamente dicha información antes de usar nuestro sitio web.
+                <h5>Estas son las condiciones de uso que rigen nuestra Tienda Online. Al realizar una compra en www.vissio-lamparas.com formalizas un contrato con nosotros y te comprometes a aceptar las condiciones de uso de esta web. Por favor lee detenidamente esta información antes de usar nuestro sitio web.
                 </h5>
             </div>
             <div className="envios-subtitle">
-                <h2>Realizar un pedido.</h2>
+                <h2>Realizar una Compra.</h2>
                 
             </div>
             <div className="envios-txt">
-                <h5>Cuando hayas seleccionado el producto de interes y realizado el pedido, te enviaremos un email de confirmacion al correo electronico que nos hayas facilitado en el proceso del pedido.<br/><br/> Es muy importa que el email y los datos solicitados sean reales y correctos. Todos nuestros productos cuentan con una demora de "xx dias", debido a que son fabricados una vez que la compra se ha realizado exitosamente.<br/><br/> En caso de solicitar un producto a medida los plazos de despacho y condiciones de envio quedan a posibles modificaciones, que pueden ser a causa de la fabricacion en medidas distintas o de la empresa de encomiendas, en ambos casos te informaremos con anticipacion al correo electronico que nos facilitaste en el proceso de compra.
-                </h5>
-            </div>
-            <div className="envios-subtitle">
-                <h2>Plazos de cancelacion.</h2>
+                <h5>Cuando hayas seleccionado el producto de interes y realizado el pedido, te enviaremos un email de confirmacion al correo electronico que nos hayas facilitado en el proceso de compra.<br/><br/>
+                Es muy importa que el email y los datos solicitados sean reales y correctos. El tiempo estimado de entrega de un articulo sera dentro de los 5 dias habiles siguientes a la confirmacion de tu compra. Los envios se realizan por articulo (producto), no por partes.
+                El destino de envio sera el especificado en el proceso de compra como domicilio de entrega.</h5>
             </div>
             <div className="envios-txt">
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet modi inventore ex debitis ipsam explicabo cum laboriosam nisi ipsum aliquid delectus a magni sunt eum totam error ipsa, autem ab nemo omnis vero voluptatem ut voluptas iusto. Suscipit, tempore unde?
-                </h5>
+                <h5>En el email de confirmacion de compra te enviaremos los link y informacion de los metodos de pago, aceptamos tarjetas de credito, debito (visa o mastercard), como tambien transferencias bancarias, toda la informacion pertinente para esta opcion te la enviaremos con el email de compra.</h5>
             </div>
             <div className="envios-subtitle">
-                <h2>¿Que ocurre si no podemos suministrarte el producto?</h2>
+                <h2>Envio.</h2>
             </div>
             <div className="envios-txt">
-                <h5>Si no podemos suministrarte un producto: por no disponer de stock, por estar descatalogado, debido a un error en el precio marcado o porque no podemos fabricarlo en el plazo de ejecución previsto, te informaremos por correo electrónico y no procesaremos el pedido.<br/><br/> Si ya has pagado los productos, te reembolsaremos el monto total lo antes posible, incluidos los gastos de envío.
-                </h5>
+                <h5>El tiempo estimado de entrega de un articulo sera dentro de los 5 dias habiles siguientes a la confirmacion de tu compra. Los envios se realizan por pedido (producto completo), no por partes.<br/><br/>
+                Los envios se despachan de lunes a viernes en nuestro horario de trabajo que es de 08 a 18hrs, compras o pagos efectuados dias no habiles o feriados, seran despachados el primer dia habil que corresponda.<br/><br/>
+                Recuerda que al momento de generar la compra, segun tu localidad, modo de envio y retiro, te enviaremos el costo de envio que debe ser cancelado de manera exacta para proceder a enviar tu producto.</h5>           
             </div>
             <div className="envios-subtitle">
-                <h2>Metodos de pago.</h2>
+                <h2>Demoras en envio</h2>
             </div>
             <div className="envios-txt">
-                <h5>El método habitual para pagar tus compras es mediante tarjeta de crédito o debito a traves de una plataforma de pagos web. Si por cualquier motivo prefieres pagar mediante transferencia bancaria, escríbenos a hola@vissiolamparas.com y Te facilitaremos un número de cuenta para hacer el pago.<br/><br/> Cargos y promociones vigentes que otorga tu tarjeta y/o intereses que aplica la entidad que la emitio estan sujetas a la entidad bancaria que la emitio, te invitamos a consultar las condiciones de tu tarjeta antes de efectuar el pago.
+                <h5>En el caso de que el pedido no llegue en el plazo fijado, puedes contactarnos por nuestras redes sociales y al email xxx@xxx asi te notificaremos del estado de tu envio y cual es el inconveniente.
                 </h5>
             </div>
             <div className="envios-subtitle">

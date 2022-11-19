@@ -34,8 +34,6 @@ function App() {
 
                 <Route path="/sobreNosotros" element={<SobreNosotros/>}/> 
                 <Route path="/Contactanos" element={<ContactUs/>}/> 
-                <Route path="/CuidadosYMantenimiento" element={<CuidadosYMantenimiento/>}/>
-                <Route path="/PostVenta" element={<PostVenta/>}/>
                 <Route path="/TenesUnaTienda" element={<TenesUnaTienda/>}/>
                 <Route path="/EnviosPedidosYDevoluciones" element={<EnviosYDevoluciones/>}/>
                 <Route path="/AvisosLegales" element={<AvisoLegal/>}/>

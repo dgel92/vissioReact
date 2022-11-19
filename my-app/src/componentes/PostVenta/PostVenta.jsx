@@ -5,7 +5,7 @@ function PostVenta(){
     return(
         <section className="envios-container">
             <div className="envios-title">
-                <h1>Servicios Post-venta.</h1>
+                <h1>Terminos y condiciones de compra.</h1>
             </div>
             
             <div className="envios-subtitle">
@@ -13,7 +13,7 @@ function PostVenta(){
                 
             </div>
             <div className="envios-txt">
-                <h5>En Vissio Lamparas ofrecemos la siguiente garantia limitada aplicable unicamente a los compradores originaless de nuestros productos.<br/><br/>Para cualquier servicio o pregunta relacionada con la garantía debes remitirnos la factura de compra. En caso de no disponer de ella no podremos ofrecerle ninguna garantía.
+                <h5>En Vissio Lamparas ofrecemos la siguiente garantia limitada aplicable unicamente a los compradores originales de nuestros productos.<br/><br/>Para cualquier servicio o pregunta relacionada con la garantía debes remitirnos la factura de compra. En caso de no disponer de ella no podremos ofrecerle ninguna garantía.
                 </h5>
             </div>
             <div className="envios-subtitle">
