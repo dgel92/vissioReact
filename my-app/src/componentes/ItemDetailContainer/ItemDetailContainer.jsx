@@ -1,20 +1,9 @@
 import React, {useEffect} from "react";
 import '../sass/main.css';
 import { useState } from "react";
-import dataArray from "../data/data";
 import ItemDetail from "../ItemDeital/ItemDetail";
 import { useParams } from "react-router-dom";
-
-function getdataArray(id){
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            const productoFind = dataArray.find((producto)=>{
-                return Number(id) === producto.id
-            });
-            resolve(productoFind)
-        }, 500);
-    });
-}
+import {getItem as getdataArray} from '../data/fireBase.js';
 
 function ItemDetailContainer() {
 const [dataArrayEstado, setdataArray] = useState()

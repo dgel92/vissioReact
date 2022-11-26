@@ -2,8 +2,12 @@ import React from 'react'
 import useCartContext from '../CartContext/CartContext'
 import {Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+
 function CartView(){
-    const {cart, removeFromCart, clearCart, calcPriceCart} = useCartContext();
+    const {cart, removeFromCart, clearCart, getTotalPrice} = useCartContext();
     console.log("CART", cart)
 
     if(cart.length === 0){
@@ -30,16 +34,13 @@ function CartView(){
                 </div>
             </div>
             })}
-            <div className="container"><h4>total: $</h4></div>
             <div className="vaciarCarrito">
                 <Button variant="secondary" onClick={clearCart}>Vaciar Carrito</Button>
                 <Link to="/Checkout" className="checkout"><Button variant="primary">Finalizar Compra</Button></Link>
             </div>
         </div>}
-    }
+        }
 
 export default CartView
 
-
-// clase 12 min 01//
 

@@ -33,6 +33,12 @@ export function CartContextrProvider ({children}){
         setCart(cartFilter);
     }
 
+    function getTotalPrice(){
+        let totalPrice = 0;
+        cart.forEach(item => totalPrice += item.cant * item.price)
+        return totalPrice;
+
+    }
     const clearCart=()=>{
         setCart([])
     }

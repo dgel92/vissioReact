@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import imgFormularioContacto from '../multimedia/imgFormularioContacto.jpg';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
-    const form = useRef();
+    const Form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
