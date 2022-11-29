@@ -4,7 +4,7 @@ import { useState } from "react";
 import ItemList from "../ItemList/ItemList";
 import {useParams} from "react-router-dom";
 import Filtros from "../Filtros/Filtros";
-import {getAllItems as getdataArray, dataToFirebase, getItemsByCategory} from '../data/fireBase.js';
+import {getAllItems as getdataArray, getItemsByCategory} from '../data/fireBase.js';
 
 
 function ItemListContainer({titulo}) {
@@ -31,7 +31,6 @@ getdataArray()
         <div className="main">
             <div className="contenedor-productos">
                 <ItemList dataArray={dataArrayEstado}/>
-                <button onClick={dataToFirebase}>add to firebase</button>
             </div>
         </div>
         </>
