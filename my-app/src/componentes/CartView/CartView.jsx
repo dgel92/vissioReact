@@ -2,13 +2,26 @@ import React from 'react'
 import useCartContext from '../CartContext/CartContext'
 import {Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
+import { createBuyOrder } from '../data/fireBase';
 
-function CartView(){
+const CartView = ()=>{
     const {cart, removeFromCart, clearCart, getTotalPrice} = useCartContext();
-    console.log("CART", cart)
+
+    function handleBuy(){
+        const buyOrder = {
+        buyer:{
+            nombre:"juan",
+            dni: "95375136",
+            phone: "32433243",
+            direccion: "arturo m bas 13",
+            email: "dgel92@gmail.com",
+        },
+        items: [...cart],
+        total:getTotalPrice(),
+    }
+    createBuyOrder(buyOrder);
+} 
+
 
     if(cart.length === 0){
         return(
@@ -36,7 +49,7 @@ function CartView(){
             })}
             <div className="vaciarCarrito">
                 <Button variant="secondary" onClick={clearCart}>Vaciar Carrito</Button>
-                <Link to="/Checkout" className="checkout"><Button variant="primary">Finalizar Compra</Button></Link>
+                <Button variant="primary" onClick={handleBuy}>Finalizar Compra</Button>
             </div>
         </div>}
         }

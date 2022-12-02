@@ -20,7 +20,7 @@ export function CartContextrProvider ({children}){
             });
             setCart(newCart);
         }else{
-        setCart([...cart,{...item, cant}]
+        setCart([...cart,{...item, cant}] 
             )
         }
     }
@@ -35,7 +35,7 @@ export function CartContextrProvider ({children}){
 
     function getTotalPrice(){
         let totalPrice = 0;
-        cart.forEach(item => totalPrice += item.cant * item.price)
+        cart.forEach(item => totalPrice += item.cant * item.precio)
         return totalPrice;
 
     }
@@ -70,7 +70,8 @@ export function CartContextrProvider ({children}){
         clearCart,
         isInCart,
         cantInCart,
-        calcPriceCart
+        calcPriceCart,
+        getTotalPrice
         
         }}>
             {children}

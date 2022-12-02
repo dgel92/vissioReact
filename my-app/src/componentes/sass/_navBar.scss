@@ -17,8 +17,11 @@
 }
 
 .brand{
-    width:290px;
-    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:auto;
+    height: auto;
 }
 
 .btnClose{

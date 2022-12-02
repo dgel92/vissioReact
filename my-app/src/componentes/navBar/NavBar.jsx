@@ -1,6 +1,6 @@
 import React from 'react';
 import '../sass/main.css';
-import Logo from '../../multimedia/logoSitio3.png';
+import Logo from '../../multimedia/logoDefinitivo.png';
 import CartWidget from '../CartWidget.jsx/CartWidget';
 import {Link} from "react-router-dom";
 import useCartContext from '../CartContext/CartContext';

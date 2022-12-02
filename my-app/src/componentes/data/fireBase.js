@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {getFirestore, doc, getDoc, query, where, collection, getDocs, setDoc} from 'firebase/firestore/lite'
+import {getFirestore, doc, getDoc, query, where, collection, getDocs, setDoc, Timestamp, addDoc,} from 'firebase/firestore/lite'
 
 import alain from "../../multimedia/alain-1.jpg";
 import alain1 from "../../multimedia/alain-2.jpg";
@@ -884,3 +884,19 @@ export async function dataToFirebase(){
         });
     });
 }
+
+export async function createBuyOrder (orderData){
+    const buyTimestamp = Timestamp.now();
+    const orderConFecha = 
+        {...orderData, 
+            date: buyTimestamp
+            };
+    
+    const miColec = collection(firestoreDB, "buyOrders");
+    const orderDoc = await addDoc(miColec, orderConFecha);        
+    console.log("orden lista;", orderDoc.id);
+    console.log("orden lista;", orderDoc.data());
+}
+
+
+//<button onClick={dataToFirebase}>add to firebase</button
