@@ -86,4 +86,4 @@ return(
 
 export default Checkout
 
-//clase 13 min 52.24
+//clase 13 min 
