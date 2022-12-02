@@ -49,11 +49,23 @@ const CartView = ()=>{
             })}
             <div className="vaciarCarrito">
                 <Button variant="secondary" onClick={clearCart}>Vaciar Carrito</Button>
-                <Button variant="primary" onClick={handleBuy}>Finalizar Compra</Button>
+                <Link to="/Checkout" className="checkout"><Button variant="primary">Finalizar Compra</Button></Link>
+                <div>
+                    <form action="">
+
+                        <input 
+                            type="text"
+                            nombre="nombre" 
+                            placeholder="Text"
+                        />
+                    </form>
+                </div>
+            
             </div>
-        </div>}
+        </div>
+        
+
         }
+    }
 
 export default CartView
-
-
