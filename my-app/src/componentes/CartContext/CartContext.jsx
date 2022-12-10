@@ -73,7 +73,7 @@ export function CartContextrProvider ({children}){
         calcPriceCart,
         getTotalPrice
         
-        }}>
+        }}> 
             {children}
 
         </Provider>

@@ -1,6 +1,6 @@
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import imgFormularioContacto from '../multimedia/imgFormularioContacto.jpg';
+import InputGroup from 'react-bootstrap/InputGroup';
+import imgFormularioContacto from '../multimedia/img-contactanos.jpg';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -16,29 +16,40 @@ export const ContactUs = () => {
                 console.log(error.text);
             });
         };
-    
+
         return (
         <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
+            <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1" type="text" name="user_name" required>Nombre</InputGroup.Text>
+                <Form.Control
+                placeholder="Nombre"
+                aria-label="Nombre"
+                aria-describedby="basic-addon1"
+                />
+            </InputGroup>
+        
+            <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1" type="email" name="user_email" required>Email</InputGroup.Text>
+                <Form.Control
+                placeholder="Email"
+                aria-label="Email"
+                aria-describedby="basic-addon1"
+                />
+            </InputGroup>
+            <InputGroup className="mb-3">
+                <InputGroup.Text id="basic-addon1" type="telefono" name="user_telefono" required>Telefono</InputGroup.Text>
+                <Form.Control
+                placeholder="Telefono"
+                aria-label="Telefono"
+                aria-describedby="basic-addon1"
+                />
+            </InputGroup>        
+            <InputGroup>
+                <InputGroup.Text >Mensaje</InputGroup.Text>
+                <Form.Control as="textarea" aria-label="With textarea" type="message" name="user_telefono" required />
+            </InputGroup>
+
             <input type="submit" value="Send" />
         </form>
-        );
-    };
-
-
-/*function sendEmail(e) {
-    e.preventDefault(); 
-
-    emailjs.sendForm('service_6ycvs8o', 'template_gvdoo0l', e.target, 'r-foasPasxzvfpP4C')
-    .then((result) => {
-        alert(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-    e.target.reset();
-}*/
+    );
+}
