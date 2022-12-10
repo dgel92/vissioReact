@@ -2,6 +2,7 @@ import React from 'react'
 import '../componentes/sass/main.css';
 import tienda1 from '../multimedia/brandTienda-2.jpg';
 import tienda from '../multimedia/tienda.jpg';
+import imgPortada from '../multimedia/imgPortada.jpeg';
 import {Link} from "react-router-dom";
 import Carrousel from '../componentes/Carrousel/Carrousel';
 import DarkVariantExample from './carouselItemCard/CarouselItemCard';
@@ -30,7 +31,7 @@ function ItemPortada() {
             <h2>Objetos con alma, duraderos, funcionales y sostenibles.</h2>
         </div>
         <section className='img-portada'>
-            <Link to="/sobreNosotros"><img src={tienda} alt="" className='img-box2'/></Link>
+            <Link to="/sobreNosotros"><img src={imgPortada} alt="" className='img-box2'/></Link>
         </section>
         <div className="text-portada">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut similique id, architecto repellat ratione, exercitationem obcaecati veritatis voluptatem adipisci sed accusamus quidem minima magnam quis? Natus neque tempore deleniti molestias dignissimos commodi nesciunt praesentium nihil officia eaque nemo adipisci doloribus, veritatis, aut tempora, optio error cupiditate nisi eius id.</h3>

@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import anoximenes4 from "../../multimedia/anoximenes-5.jpg";
-import alain4 from "../../multimedia/alain-5.jpg";
-import alain5 from "../../multimedia/alain-6.jpg";
-import badiou4 from "../../multimedia/badiou-5.jpg";
-import barcelona4 from "../../multimedia/barcelona-5.jpg";
+import carouselFooter1 from "../../multimedia/carouselfooter-1.jpeg";
+import carouselFooter2 from "../../multimedia/carouselfooter-2.jpeg";
+import carouselFooter3 from "../../multimedia/carouselfooter-3.jpeg";
+import carouselFooter4 from "../../multimedia/carouselfooter-4.jpeg";
+import carouselFooter5 from "../../multimedia/carouselfooter-5.jpeg";
+import carouselFooter6 from "../../multimedia/carouselfooter-6.jpeg";
+import carouselFooter7 from "../../multimedia/carouselfooter-7.jpeg";
+import carouselFooter8 from "../../multimedia/carouselfooter-8.jpeg";
+import carouselFooter9 from "../../multimedia/carouselfooter-9.jpeg";
 
 
 
@@ -17,15 +21,15 @@ function DarkVariantExample() {
             <Carousel.Item interval={7000}>
                 <CardGroup>
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter1} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter2} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter3} />
                     </Card>
                 </CardGroup>
             </Carousel.Item>
@@ -33,15 +37,15 @@ function DarkVariantExample() {
             <Carousel.Item interval={7000}>
                 <CardGroup>
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter4} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter5} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter6} />
                     </Card>
                 </CardGroup>
             </Carousel.Item>
@@ -49,15 +53,15 @@ function DarkVariantExample() {
             <Carousel.Item interval={7000}>
                 <CardGroup>
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter7} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter8} />
                     </Card>
 
                     <Card>
-                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={anoximenes4} />
+                        <Card.Img className="cardimg d-block w-55" variant="bottom" src={carouselFooter9} />
                     </Card>
                 </CardGroup>
             </Carousel.Item>

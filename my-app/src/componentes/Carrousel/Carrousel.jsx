@@ -1,6 +1,7 @@
-import Brand from "../../multimedia/brand-carrousel.jpg"
-import Brand2 from "../../multimedia/brand-carrousel-2.jpg"
-import Brand3 from "../../multimedia/brand-carrousel-3.jpg"
+import Brand from "../../multimedia/imgcarousel-1.jpeg"
+import Brand2 from "../../multimedia/imgcarousel-2.jpeg"
+import Brand3 from "../../multimedia/imgcarousel-3.jpeg"
+import Brand4 from "../../multimedia/imgcarousel-4.jpeg"
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,10 +26,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                     <img className="d-block w-100" src={Brand3} alt="Third slide"/>
                     <Carousel.Caption></Carousel.Caption>
                 </Carousel.Item>
+                <Carousel.Item>
+                    <img className="d-block w-100" src={Brand4} alt="Third slide"/>
+                    <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
             </Carousel>
         </div>
     );
 }
 
 export default Carrousel;
-
