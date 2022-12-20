@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from '../Item/Item';
-
+import { dataToFirebase } from '../data/fireBase';
 function ItemList({dataArray}){
     
     return(
@@ -11,6 +11,7 @@ function ItemList({dataArray}){
                 )
             })
         }
+        <button onClick={dataToFirebase}>add to firebase</button>
         </>
     )
 }

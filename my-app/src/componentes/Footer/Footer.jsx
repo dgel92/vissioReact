@@ -23,7 +23,6 @@ function Footer(){
                 <div className="footerlist">
                     <li><Link to="/contactanos" className="links">Contactanos</Link></li>
                     <li><Link to="/EnviosPedidosYDevoluciones" className="links">Pedidos, envios y devoluciones</Link></li>
-                    <li><Link to="/AvisosLegales" className="links">Aviso Legal</Link></li>
                 </div>
             <br></br>
         </section>

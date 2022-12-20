@@ -38,7 +38,6 @@ function NavBar(){
                                         <Nav className="justify-content-end flex-grow-1 pe-3">
                                         <Nav.Link className="navCard"><a><Link to="/">Inicio</Link></a></Nav.Link>
                                         <Nav.Link className="navCard"><a><Link to="/tienda">Tienda</Link></a></Nav.Link>
-                                        <Nav.Link className="navCard"><a><Link to="/sobreNosotros">Sobre nosotros</Link></a></Nav.Link>
                                         </Nav>
                                         <hr></hr>
                                         <NavDropdown.Item className="navCard"><a><Link to="/cart">Carrito</Link></a></NavDropdown.Item>

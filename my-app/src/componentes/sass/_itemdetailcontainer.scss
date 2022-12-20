@@ -1,33 +1,50 @@
 .detail-container{
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     margin-top: 1vh;
+    justify-content: space-evenly;
     margin-bottom: 10vh;
-    border: 2px solid blue;
+    line-height: 10px;
 }
 
 .detail-card{
     display:flex;
     flex-direction: column;
-    margin:10vh 0vh 0vh 40vh;
+    width: 70vh;
+    margin:10vh 0vh 0vh 0vh;
+    letter-spacing: .5px;
 
     .detail-name{
-        font-size: 3rem;
-        font-weight: 450;
+        font-size: 3.5rem;
+        font-weight: 500;
         font-family: $roboto;
     }
 
     .detail-precio{
         margin-top:10px;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 400;
         font-family: $roboto;
     }
 
     .detail-caracteristica{
         display:flex;
-        width: 50vh;
-        height: 20vh;
+        flex-direction: column;
+        border: .5px solid rgba(0, 0, 0, 0.288);
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+        padding: 20px;
+
+
+        h4{
+            margin-bottom: 30px;
+        }
+        h5{
+            margin-bottom: 15px;
+        }
+        
+        
     }
 
 }
@@ -35,23 +52,12 @@
 .count-container{
     display:flex;
     flex-direction: column;
-    width: 40vh;
     height: auto;
-    border: 2px solid rgb(77, 77, 77);
-    border-radius: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    margin-top: 2vh;
     
-
-    .count-title{
-        margin-top: 10px;
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
-        font-weight: 600
-    }
-
     .count-card{
         display:flex;
         width: auto;
@@ -60,40 +66,49 @@
         justify-content: space-between;
 
     .botonCounter{
-        width: 5vh;
-        height: auto;
+        display:flex;
+        flex-direction: column;
+        width: 100px;
+        height: 60px;
+        border: 0px;
         border-radius: 15px;
-        list-style: none;
-        text-decoration: none;
-        margin: 10px;
-        font-weight: 500;
-        font-size: 2rem;
-        color: white;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
         align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.548);
+        color: white;
+        font-size: 3.8rem;
+        font-family: $roboto;
     }
 
     .botonCounter:hover{
+        background-color: rgba(44, 38, 38, 0.548);
         color: rgb(0, 0, 0);
     }
 
     .count-contador{
+        display:flex;
         margin: 10px;
-        font-size: 2rem;
+        font-size: 3.8rem;
+        position: relative;
+        top: -20px;
         font-weight: 500;
     }
 
 }
 
 .count-add{
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 
     .agregarCarrito{
         width: 20vh;
         height: 8vh;
         margin-top: 10px;
-        border-radius: 10px;
         font-size: 1.1rem;
-        letter-spacing: .03em;
+        letter-spacing: .0em;
         font-weight: 500;
         
     }
@@ -114,139 +129,157 @@
     justify-content: center;
     margin-top: 10vh;
     margin-left: 20vh;
-    border: 2px solid red;
 }
 
-
-@media(max-width: 1450px){
-    .detail-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 1vh;
-        margin-bottom: 10vh;
-        border: 2px solid blue;
-    }
-
+@media (max-width: 1750px){
     .detail-card{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 2px solid orange;
-        margin:10vh 0vh 10vh 5vh;
+    all: unset;
+    margin-left: 20vh;
+    margin-top: 5vh;
     
+    }
+}
+
+@media (max-width: 1350px){
+    .detail-card{
+        all:unset;
+        margin-top: 5vh;
+        
         .detail-name{
-            font-size: 1.8rem;
-            font-weight: 450;
+            font-size: 3rem;
+            font-weight: 500;
             font-family: $roboto;
         }
     
         .detail-precio{
-            margin-top:10px;
-            font-size: 1.6rem;
-            font-weight: 400;
-            font-family: $roboto;
-        }
-    
-        .detail-caracteristica{
-            display:flex;
-            width: 50vh;
-            height: 20vh;
-        }
-    
-    }
-
-    .carouselItem-Container{
-        display:flex;
-        position: relative;
-        right: 10vh;
-        width: 520px;
-        height: 690px;
-        justify-content: center;
-        border: 2px solid red;
-    }
-}
-
-@media(max-width: 1180px){
-    .detail-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 1vh;
-        margin-bottom: 10vh;
-        border: 2px solid blue;
-    }
-
-    .detail-card{
-        display:flex;
-        width: 30vh;
-        flex-direction: column;
-        justify-content: center;
-        border: 2px solid orange;
-        margin:10vh 0vh 10vh -15vh;
-    
-        .detail-name{
-            font-size: 1.8rem;
-            font-weight: 450;
-            font-family: $roboto;
-        }
-    
-        .detail-precio{
-            margin-top:10px;
-            font-size: 1.6rem;
-            font-weight: 400;
-            font-family: $roboto;
-        }
-    
-        .detail-caracteristica{
-            display:flex;
-            width: 50vh;
-            height: 20vh;
-        }
-    
-    }
-
-    .carouselItem-Container{
-        display:flex;
-        position: relative;
-        right: 20vh;
-        width: 520px;
-        height: 690px;
-        justify-content: center;
-        border: 2px solid red;
-    }
-}
-
-@media(max-width: 828px){
-    .detail-container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        border: 2px solid green;
-        align-items: center;
-        padding-left: 20vh;
-    }
-
-    .detail-card{
-        display:flex;
-        flex-direction: column;
-        width:auto;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        margin-top: 3vh;
-        }
-
-        .detail-name{
+            margin-top: 10px;
             font-size: 2rem;
-            font-weight: 450;
+            font-weight: 400;
+            font-family: $roboto;
+        }
+    
+        .detail-caracteristica{
+            display:flex;
+            flex-direction: column;
+            border: .5px solid rgba(0, 0, 0, 0.288);
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            padding: 20px;
+    
+    
+            h4{
+                margin-bottom: 30px;
+            }
+            h5{
+                margin-bottom: 15px;
+            }
+            
+            
+        }
+    
+    }
+
+    .carouselItem-Container{
+        display:flex;
+        width: 520px;
+        height: 690px;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-left: -5vh;
+    }
+}
+
+@media (max-width: 1060px){
+    .detail-container{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .carouselItem-Container{
+        all: unset;
+        width: 520px;
+        height: 690px;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 550px){
+    .carouselItem-Container{
+        all: unset;
+        display:flex;
+        width: 420px;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .detail-card{
+        all:unset;
+        margin-top: 5vh;
+        
+        .detail-name{
+            font-size: 3rem;
+            font-weight: 500;
             font-family: $roboto;
         }
     
         .detail-precio{
-            margin-top:10px;
+            margin-top: 10px;
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: $roboto;
+        }
+    
+        .detail-caracteristica{
+            display:flex;
+            flex-direction: column;
+            border: .5px solid rgba(0, 0, 0, 0.288);
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            padding: 20px;
+    
+    
+            h4{
+                margin-bottom: 30px;
+            }
+            h5{
+                margin-bottom: 15px;
+            }
+            
+            
+        }
+    
+    }
+    
+}
+
+@media (max-width: 435px){
+    .carouselItem-Container{
+        all: unset;
+        display:flex;
+        width: 320px;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+
+    .detail-card{
+        all:unset;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 3vh;
+
+        
+        .detail-name{
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: $roboto;
+        }
+    
+        .detail-precio{
+            margin-top: 3px;
             font-size: 1.5rem;
             font-weight: 400;
             font-family: $roboto;
@@ -255,27 +288,30 @@
         .detail-caracteristica{
             display:flex;
             flex-direction: column;
-            width:auto ;
-            text-align: center;
+            border: .5px solid rgba(0, 0, 0, 0.288);
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            padding: 8px 8px 8px 8px;
+
+            h4{
+                margin-bottom: 30px;
             }
-    
+            h5{
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+        }
     }
     
     .count-container{
         display:flex;
         flex-direction: column;
-        width: auto;
         height: auto;
-        border-radius: 15px;
-        border: 2px solid red;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2vh;
         
-        .count-title{
-            margin-top: 10px;
-            font-size: 1.8rem;
-            letter-spacing: 1.5px;
-            font-weight: 600
-        }
-    
         .count-card{
             display:flex;
             width: auto;
@@ -284,62 +320,142 @@
             justify-content: space-between;
     
         .botonCounter{
-            width: 5vh;
-            height: auto;
+            display:flex;
+            flex-direction: column;
+            width: 80px;
+            height: 60px;
+            border: 0px;
             border-radius: 15px;
-            list-style: none;
-            text-decoration: none;
-            margin: 10px;
-            font-weight: 500;
-            font-size: 2rem;
-            color: white;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+            margin-left: 20px;
+            margin-right: 20px;
+            justify-content: center;
             align-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.548);
+            color: white;
+            font-size: 3rem;
+            font-family: $roboto;
         }
     
         .botonCounter:hover{
+            background-color: rgba(44, 38, 38, 0.548);
             color: rgb(0, 0, 0);
         }
     
         .count-contador{
+            display:flex;
             margin: 10px;
-            font-size: 2rem;
+            font-size: 3rem;
+            position: relative;
+            top: -10px;
             font-weight: 500;
         }
     
     }
-    
-    .count-add{
-        margin-bottom: 1vh;
-    
-        .agregarCarrito{
-            width: 20vh;
-            height: 8vh;
-            margin-top: 10px;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            letter-spacing: .03em;
-            font-weight: 500;
-            
-        }
-    
-        .irAlCarrito{
-            width: 20vh;
-            height: 6vh
-            
-    
-        }
     }
-    .carouselItem-Container{
-        display:flex;
-        flex-direction: row;
-        margin-left: 40vh;
-        width: 520px;
-        height: 690px;
-        justify-content: space-around;
-        margin-top: 5vh;
-        border: 2px solid red;
-    }
-    
+
 }
 
-@media(max-width: 828px){}
+@media (max-width: 350px){
+    .carouselItem-Container{
+        all:unset;
+        display:flex;
+        width: 280px;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .detail-card{
+        all:unset;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 2vh;
+
+        
+        .detail-name{
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: $roboto;
+        }
+    
+        .detail-precio{
+            margin-top: 3px;
+            font-size: 1.2rem;
+            margin-top: -5px;
+            font-weight: 400;
+            font-family: $roboto;
+        }
+    
+        .detail-caracteristica{
+            display:flex;
+            flex-direction: column;
+            border: .5px solid rgba(0, 0, 0, 0.288);
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            padding: 8px 8px 8px 8px;
+            margin-top: -20px;
+
+            h4{
+                margin-bottom: 30px;
+            }
+            h5{
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .count-container{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2vh;
+        
+        .count-card{
+            display:flex;
+            width: auto;
+            height: auto;
+            align-items: center;
+            justify-content: space-between;
+    
+        .botonCounter{
+            display:flex;
+            flex-direction: column;
+            width: 60px;
+            height: 50px;
+            border: 0px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+            margin-left: 20px;
+            margin-right: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.548);
+            color: white;
+            font-size: 2.5rem;
+            font-family: $roboto;
+        }
+    
+        .botonCounter:hover{
+            background-color: rgba(44, 38, 38, 0.548);
+            color: rgb(0, 0, 0);
+        }
+    
+        .count-contador{
+            display:flex;
+            margin: 10px;
+            font-size: 2.5rem;
+            position: relative;
+            top: -10px;
+            font-weight: 600;
+            }
+        }
+    }
+}

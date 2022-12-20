@@ -37,6 +37,14 @@ svg {
   text-decoration: none;
 }
 
+.btnselect {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
 .btnFiltro {
   padding-right: 30px;
 }
@@ -152,6 +160,27 @@ svg {
   }
 }
 
+.imgFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.imgFormulario img {
+  width: 70vh;
+  height: auto;
+  border-radius: 5px;
+}
+
 .formularioContacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,37 +189,29 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-top: 7.5vh;
-  padding-left: 20%;
-  padding-right: 20%;
-  height: 100%;
-  max-width: 100%;
+  margin: 50px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.formularioContacto h1 {
-  text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
-  font-family: "Be Vietnam", sans-serif;
-  font-size: 3rem;
-  letter-spacing: 0.08em;
-  border: 2px solid red;
+.formularioContacto form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vh;
+  border: 2px solid rgba(42, 43, 41, 0.589);
+  border-radius: 10px;
+  padding: 15px;
 }
 
-.formularioContacto h4 {
-  text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
-  font-size: 1.4rem;
-  letter-spacing: 0.09em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 550;
-  border: 2px solid red;
-}
-
-.imagenFormulario {
+.formularioContacto form input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,20 +219,29 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
-  height: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  height: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid red;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.form {
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  border: 2px solid red;
+.formularioContacto form Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10vh;
 }
 
 @media (max-width: 770px) {
@@ -1278,166 +1308,6 @@ svg {
   }
 }
 
-.sobreNosotros-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
-.sobreNosotros-imgPortada {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.sobreNosotros-tittle {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  border: 2px solid blue;
-}
-
-.sobreNosotros-tittle h3 {
-  font-family: "Be Vietnam", sans-serif;
-  font-size: 2rem;
-}
-
-.sobreNosotros-tittle h4 {
-  font-family: "Be Vietnam", sans-serif;
-  font-size: 1.5rem;
-}
-
-.sobreNosotros-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-@media (max-width: 920px) {
-  .sobreNosotros-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 2px solid red;
-  }
-  .sobreNosotros-imgPortada {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .sobreNosotros-tittle {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    border: 2px solid blue;
-  }
-  .sobreNosotros-tittle h3 {
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1.2rem;
-  }
-  .sobreNosotros-tittle h4 {
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1.2rem;
-  }
-  .sobreNosotros-text {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    margin-left: 10vh;
-    margin-right: 5vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-}
-
-@media (max-width: 648px) {
-  .sobreNosotros-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    border: 2px solid red;
-  }
-  .sobreNosotros-imgPortada {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .sobreNosotros-tittle {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    border: 2px solid blue;
-  }
-  .sobreNosotros-tittle h3 {
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1rem;
-  }
-  .sobreNosotros-tittle h4 {
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1em;
-  }
-  .sobreNosotros-text {
-    font-family: "Roboto", sans-serif;
-    font-size: .8rem;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-}
-
-.cuidados-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.cuidados-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: auto;
-  height: 200px;
-  border: 2px solid red;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .envios-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,10 +1378,15 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 100%;
   margin-top: 1vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 10vh;
-  border: 2px solid blue;
+  line-height: 10px;
 }
 
 .detail-card {
@@ -1522,18 +1397,20 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10vh 0vh 0vh 40vh;
+  width: 70vh;
+  margin: 10vh 0vh 0vh 0vh;
+  letter-spacing: .5px;
 }
 
 .detail-card .detail-name {
-  font-size: 3rem;
-  font-weight: 450;
+  font-size: 3.5rem;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
 
 .detail-card .detail-precio {
   margin-top: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
@@ -1542,8 +1419,23 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50vh;
-  height: 20vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.5px solid rgba(0, 0, 0, 0.288);
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+  padding: 20px;
+}
+
+.detail-card .detail-caracteristica h4 {
+  margin-bottom: 30px;
+}
+
+.detail-card .detail-caracteristica h5 {
+  margin-bottom: 15px;
 }
 
 .count-container {
@@ -1554,10 +1446,7 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40vh;
   height: auto;
-  border: 2px solid #4d4d4d;
-  border-radius: 15px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1565,14 +1454,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid red;
-}
-
-.count-container .count-title {
-  margin-top: 10px;
-  font-size: 1.8rem;
-  letter-spacing: 1.5px;
-  font-weight: 600;
+  margin-top: 2vh;
 }
 
 .count-container .count-card {
@@ -1590,41 +1472,60 @@ svg {
 }
 
 .count-container .count-card .botonCounter {
-  width: 5vh;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  height: 60px;
+  border: 0px;
   border-radius: 15px;
-  list-style: none;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: 500;
-  font-size: 2rem;
-  color: white;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: white;
+  font-size: 3.8rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .count-container .count-card .botonCounter:hover {
+  background-color: rgba(44, 38, 38, 0.548);
   color: black;
 }
 
 .count-container .count-card .count-contador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 10px;
-  font-size: 2rem;
+  font-size: 3.8rem;
+  position: relative;
+  top: -20px;
   font-weight: 500;
 }
 
 .count-container .count-add {
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .count-container .count-add .agregarCarrito {
   width: 20vh;
   height: 8vh;
   margin-top: 10px;
-  border-radius: 10px;
   font-size: 1.1rem;
-  letter-spacing: .03em;
+  letter-spacing: .0em;
   font-weight: 500;
 }
 
@@ -1644,44 +1545,29 @@ svg {
           justify-content: center;
   margin-top: 10vh;
   margin-left: 20vh;
-  border: 2px solid red;
 }
 
-@media (max-width: 1450px) {
-  .detail-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 10vh;
-    border: 2px solid blue;
-  }
+@media (max-width: 1750px) {
   .detail-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 2px solid orange;
-    margin: 10vh 0vh 10vh 5vh;
+    all: unset;
+    margin-left: 20vh;
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 1350px) {
+  .detail-card {
+    all: unset;
+    margin-top: 5vh;
   }
   .detail-card .detail-name {
-    font-size: 1.8rem;
-    font-weight: 450;
+    font-size: 3rem;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
   }
   .detail-card .detail-precio {
     margin-top: 10px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
@@ -1689,42 +1575,42 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50vh;
-    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+    padding: 20px;
+  }
+  .detail-card .detail-caracteristica h4 {
+    margin-bottom: 30px;
+  }
+  .detail-card .detail-caracteristica h5 {
+    margin-bottom: 15px;
   }
   .carouselItem-Container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    right: 10vh;
     width: 520px;
     height: 690px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 2px solid red;
+    margin-top: 10vh;
+    margin-left: -5vh;
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1060px) {
   .detail-container {
+    all: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 10vh;
-    border: 2px solid blue;
-  }
-  .detail-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 30vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1732,17 +1618,45 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 2px solid orange;
-    margin: 10vh 0vh 10vh -15vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carouselItem-Container {
+    all: unset;
+    width: 520px;
+    height: 690px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .carouselItem-Container {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 420px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5vh;
+  }
+  .detail-card {
+    all: unset;
+    margin-top: 5vh;
   }
   .detail-card .detail-name {
-    font-size: 1.8rem;
-    font-weight: 450;
+    font-size: 3rem;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
   }
   .detail-card .detail-precio {
     margin-top: 10px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
@@ -1750,73 +1664,63 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50vh;
-    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+    padding: 20px;
   }
-  .carouselItem-Container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    right: 20vh;
-    width: 520px;
-    height: 690px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 2px solid red;
+  .detail-card .detail-caracteristica h4 {
+    margin-bottom: 30px;
+  }
+  .detail-card .detail-caracteristica h5 {
+    margin-bottom: 15px;
   }
 }
 
-@media (max-width: 828px) {
-  .detail-container {
+@media (max-width: 435px) {
+  .carouselItem-Container {
+    all: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    height: auto;
-    border: 2px solid green;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 20vh;
-  }
-  .detail-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: auto;
+    width: 320px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    text-align: center;
     margin-top: 3vh;
   }
-  .detail-name {
-    font-size: 2rem;
-    font-weight: 450;
+  .detail-card {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+    margin-top: 3vh;
+  }
+  .detail-card .detail-name {
+    font-size: 1.8rem;
+    font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
-  .detail-precio {
-    margin-top: 10px;
+  .detail-card .detail-precio {
+    margin-top: 3px;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
   }
-  .detail-caracteristica {
+  .detail-card .detail-caracteristica {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1824,105 +1728,228 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+    padding: 8px 8px 8px 8px;
+  }
+  .detail-card .detail-caracteristica h4 {
+    margin-bottom: 30px;
+  }
+  .detail-card .detail-caracteristica h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .count-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -2vh;
+  }
+  .count-container .count-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .count-container .count-card .botonCounter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80px;
+    height: 60px;
+    border: 0px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .count-container .count-card .botonCounter:hover {
+    background-color: rgba(44, 38, 38, 0.548);
+    color: black;
+  }
+  .count-container .count-card .count-contador {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+    font-size: 3rem;
+    position: relative;
+    top: -10px;
+    font-weight: 500;
   }
 }
 
-.count-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: auto;
-  height: auto;
-  border-radius: 15px;
-  border: 2px solid red;
-}
-
-.count-container .count-title {
-  margin-top: 10px;
-  font-size: 1.8rem;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-}
-
-.count-container .count-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
-  height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.count-container .count-card .botonCounter {
-  width: 5vh;
-  height: auto;
-  border-radius: 15px;
-  list-style: none;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: 500;
-  font-size: 2rem;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.count-container .count-card .botonCounter:hover {
-  color: black;
-}
-
-.count-container .count-card .count-contador {
-  margin: 10px;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.count-container .count-add {
-  margin-bottom: 1vh;
-}
-
-.count-container .count-add .agregarCarrito {
-  width: 20vh;
-  height: 8vh;
-  margin-top: 10px;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  letter-spacing: .03em;
-  font-weight: 500;
-}
-
-.count-container .count-add .irAlCarrito {
-  width: 20vh;
-  height: 6vh;
-}
-
-.count-container .carouselItem-Container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 40vh;
-  width: 520px;
-  height: 690px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 5vh;
-  border: 2px solid red;
+@media (max-width: 350px) {
+  .carouselItem-Container {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 280px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5vh;
+  }
+  .detail-card {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+    margin-top: 2vh;
+  }
+  .detail-card .detail-name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-precio {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    margin-top: -5px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .detail-card .detail-caracteristica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.288);
+    padding: 8px 8px 8px 8px;
+    margin-top: -20px;
+  }
+  .detail-card .detail-caracteristica h4 {
+    margin-bottom: 30px;
+  }
+  .detail-card .detail-caracteristica h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .count-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -2vh;
+  }
+  .count-container .count-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .count-container .count-card .botonCounter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60px;
+    height: 50px;
+    border: 0px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .count-container .count-card .botonCounter:hover {
+    background-color: rgba(44, 38, 38, 0.548);
+    color: black;
+  }
+  .count-container .count-card .count-contador {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+    font-size: 2.5rem;
+    position: relative;
+    top: -10px;
+    font-weight: 600;
+  }
 }
 
 .cartView {

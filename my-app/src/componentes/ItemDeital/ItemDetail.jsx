@@ -59,13 +59,22 @@ const {addToCart}= useCartContext();
             <div className="detail-card">
                 <Card.Body>
                     <Card.Title className="detail-name"> Lampara {dataArrayEstado.nombre}</Card.Title>
-                        <Card.Text className="detail-precio">
-                            Precio: ${dataArrayEstado.precio}
+                        <br/>
+                        <Card.Text>
+                            <h1 className="detail-precio">Precio: $ {dataArrayEstado.precio}</h1>
                         </Card.Text>
-                        <h4>Dimensiones<br/></h4>
-                        <Card.Text className="detail-caracteristica">
-                            <h4>Altura: {dataArrayEstado.alto}</h4>
-                            <h4>Diametro: {dataArrayEstado.diametro}</h4>
+                        <Card.Text>
+                            <br/>
+                            <div className="detail-caracteristica">
+                                <h4>Caracteristicas</h4>
+                                <h5>Ubicación: {dataArrayEstado.categoria}</h5>
+                                <h5>Altura: {dataArrayEstado.alto}</h5>
+                                <h5>Diametro: {dataArrayEstado.diametro}</h5>
+                                <h5>Lampara: {dataArrayEstado.Tipodelampara}</h5>
+                                <h5>{dataArrayEstado.caracteristica}</h5>
+                                <h5>Pantallas: {dataArrayEstado.pantallas}</h5>
+                                <h5>Colores: {dataArrayEstado.ColoresPantalla}</h5>
+                            </div>
                         </Card.Text>
                         <br/>
                         <Card.Text>

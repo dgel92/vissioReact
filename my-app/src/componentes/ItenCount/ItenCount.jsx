@@ -21,13 +21,12 @@ const resta = () => {
 
     return(
         <div className='count-container'>
-            <h3 className='count-title'>Cantidad</h3>
             <div className='count-card'>
                 <ButtonToolbar aria-label="Toolbar with button groups">
                     <ButtonGroup className="me-2" aria-label="First group">
-                        <Button variant="secondary" onClick={resta} className='botonCounter'> - </Button>
-                        <Button variant="secondary" className='count-contador'> {count} </Button>
-                        <Button variant="secondary" onClick={suma} className='botonCounter'> + </Button>
+                        <button className='botonCounter' onClick={resta}>-</button>
+                        <h5 className='count-contador'> {count} </h5>
+                        <button className='botonCounter' variant="secondary" onClick={suma}> + </button>
                     </ButtonGroup>
                 </ButtonToolbar>
             </div>

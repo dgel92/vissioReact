@@ -1,4 +1,4 @@
-import Brand from "../../multimedia/imgcarousel-1.jpeg"
+import Brand from "../../multimedia/imgcarousel-2.jpeg"
 import Brand2 from "../../multimedia/imgcarousel-2.jpeg"
 import Brand3 from "../../multimedia/imgcarousel-3.jpeg"
 import Brand4 from "../../multimedia/imgcarousel-4.jpeg"

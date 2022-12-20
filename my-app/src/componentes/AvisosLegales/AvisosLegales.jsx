@@ -10,8 +10,8 @@ function AvisoLegal(){
             </div>
             <div className="envios-txt">
                 <h5>
-                Te damos la bienvenida al sitio web www.vissio-lamparas.com.ar, (en adelante mencionado como "el sitio web"). Los terminos y condiciones descritos a continuacion tienen por objeto regular el comportamiento de los usuario en el sitio y las relaciones comerciales celebradas en este sitio.<br/><br/>
-                Se entiende por "Usuario" a toda persona que visite el sitio, ocasionalmente, sin importar si es usuario registrado, identificado o que no haya relacionado una compra. <br/><br/>
+                Te damos la bienvenida al sitio web www.vissio-lamparas.com.ar, (en adelante mencionado como "sitio web"). Los terminos y condiciones descritos a continuacion tienen como objetivo regular el comportamiento de los usuario en el sitio y las relaciones comerciales celebradas en este.<br/><br/>
+                Se entiende por "usuario" a toda persona que visite el sitio, ocasionalmente, sin importar si es usuario registrado, identificado o que no haya relacionado una compra. <br/><br/>
                 El propietario y operador del sitio web es (Informacion de AFIP, CUIT xxxxx, con sede social en, xxxxxxx, ciudad, provincia(codigo postal), Republica Argentina). 
                 <br/><br/>
                 El sitio web está destinado a la compra vía online de lamparas fabricadas artesanalmente. Pueden utilizar este servicio las personas mayores de edad con capacidad legal para contratar y que acepten los presentes Términos y Condiciones de Uso. <br/><br/>Se presumen que titulares o adherentes a tarjetas de crédito tienen esta capacidad. No podrán utilizar el sitio las personas que no tengan esa capacidad ni los menores de edad. Quien se informe como Usuario a una persona jurídica, deberá tener capacidad para contratar a nombre de tal entidad y de obligar a la misma en las Condiciones de Uso.

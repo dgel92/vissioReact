@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {getFirestore, doc, getDoc, query, where, collection, getDocs, setDoc, Timestamp, addDoc,} from 'firebase/firestore/lite'
+import {getFirestore, doc, getDoc, query, where, collection, getDocs, setDoc, Timestamp, addDoc,} from 'firebase/firestore'
+import {getMessaging} from "firebase/messaging"
 
 import alain from "../../multimedia/alain-1.jpg";
 import alain1 from "../../multimedia/alain-2.jpg";
@@ -160,13 +161,16 @@ const firebaseConfig = {
     projectId: "vissio-9f7f5",
     storageBucket: "vissio-9f7f5.appspot.com",
     messagingSenderId: "240102329970",
-    appId: "1:240102329970:web:bc4c577fda5474240f7ceb"
+    appId: "1:240102329970:web:bc4c577fda5474240f7ceb",
+    measurementId: "G-L6N1JNZ1XN"
     };
 
 const app = initializeApp(firebaseConfig);
 const firestoreDB = getFirestore(app);
+const analytics= getAnalytics(app);
 
 export default firestoreDB;
+export const messaging = getMessaging(app);
 
 export async function getAllItems(){
 
@@ -219,7 +223,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: true,
         stock: 5,
-        precio: 8500,
+        precio: "8.500",
         caracteristica: "Lampara de escritorio fabricada en Cedro",
         alto: '60cm',
         diametro: '25cm',
@@ -239,7 +243,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 8,
-        precio: 22490,
+        precio: "22.490",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.50m',
         diametro: '44cm',
@@ -260,7 +264,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 5,
-        precio: 22900,
+        precio: "22.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.58m',
         diametro: 'nn',
@@ -280,7 +284,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 8,
-        precio: 8500,
+        precio: "8.500",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.30m',
         diametro: '0.24m',
@@ -301,7 +305,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 29900,
+        precio: "29.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.90m',
         diametro: '1.50m',
@@ -321,7 +325,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22900,
+        precio: "22.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.30m',
         diametro: 'nn',
@@ -341,7 +345,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 20900,
+        precio: "20.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.20m',
         diametro: 'nn',
@@ -361,7 +365,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: true,
         stock: 18,
-        precio: 16040,
+        precio: "16.040",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '65cm',
         diametro: '25cm',
@@ -381,7 +385,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 8400,
+        precio: "8.400",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '30cm',
         diametro: '18 x 16cm',
@@ -401,7 +405,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22900,
+        precio: "22.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.50m',
         diametro: '44cm',
@@ -421,7 +425,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 8490,
+        precio: "8.490",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.90m a 1.50m',
         diametro: '0.20 x 0.18',
@@ -441,7 +445,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22900,
+        precio: "22.900",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.65m',
         diametro: '0.45 x 0.31 x 0.40cm',
@@ -461,7 +465,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 7000,
+        precio: "7.000",
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '25cm',
         diametro: '10 x 15cm',
@@ -481,7 +485,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 8500,
+        precio: 8.500,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '55cm',
         diametro: '25cm',
@@ -501,7 +505,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 23900,
+        precio: 23.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '74cm',
         diametro: '22 x 20cm',
@@ -521,7 +525,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 21490,
+        precio: 21.490,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.50m',
         diametro: '44cm',
@@ -541,7 +545,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22490,
+        precio: 22.490,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.67m',
         diametro: 'nn',
@@ -561,7 +565,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 23900,
+        precio: 23.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.76m',
         diametro: '0.45 x 0.31 x 0.40cm',
@@ -601,7 +605,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 23900,
+        precio: 23.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '60cm',
         diametro: '14 x 12cm',
@@ -621,7 +625,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 31900,
+        precio: 31.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.20m',
         diametro: 'nn',
@@ -641,7 +645,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 9490,
+        precio: 9.490,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '55cm',
         diametro: '18 x 15cm',
@@ -661,7 +665,7 @@ export async function dataToFirebase(){
         categoria: "infantil",
         portada: false,
         stock: 18,
-        precio: 7700,
+        precio: 7.700,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '40cm',
         diametro: '16 x 15cm',
@@ -681,7 +685,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 26900,
+        precio: 26.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.67m',
         diametro: '0.39 x 0.25cm',
@@ -701,7 +705,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22900,
+        precio: 22.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.39m',
         diametro: 'nn',
@@ -721,7 +725,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 16040,
+        precio: 16.040,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.34m',
         diametro: 'nn',
@@ -741,7 +745,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: true,
         stock: 18,
-        precio: 29900,
+        precio: 29.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.90m a 1.50m',
         diametro: '0.20 x 0.18',
@@ -761,7 +765,7 @@ export async function dataToFirebase(){
         categoria: "colgante",
         portada: false,
         stock: 18,
-        precio: 21000,
+        precio: 21.000,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.10m x 0.70m',
         diametro: 'nn',
@@ -781,7 +785,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 23900,
+        precio: 23.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.62m',
         diametro: '44 x 23cm',
@@ -801,7 +805,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 7900,
+        precio: 7.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '0.46m',
         diametro: 'nn',
@@ -821,7 +825,7 @@ export async function dataToFirebase(){
         categoria: "escritorio",
         portada: false,
         stock: 18,
-        precio: 14900,
+        precio: 14.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '52cm',
         diametro: '30 x 10cm',
@@ -841,7 +845,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 22490,
+        precio: 22.490,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.55m',
         diametro: '44cm',
@@ -861,7 +865,7 @@ export async function dataToFirebase(){
         categoria: "lampara de pie",
         portada: false,
         stock: 18,
-        precio: 19900,
+        precio: 19.900,
         caracteristica: "lampara elaborada en Cedro - ........................",
         alto: '1.25 m',
         diametro: '35 cm',
@@ -898,5 +902,49 @@ export async function createBuyOrder (orderData){
     console.log("orden lista;", orderDoc.data());
 }
 
+export  async function sendCustomEmail(email, subject, body) {
+	const collectionRef = collection(firestoreDB, 'emailNotificaciones');
+	const emailContent = {
+		to: email,
+		message: {
+			subject: subject,
+			text: body,
+			html: `<p>${body}</p>`,
+		},
+	};
+	console.log('listo para ser enviado');
+	return await addDoc(collectionRef, emailContent);
+}
 
-//<button onClick={dataToFirebase}>add to firebase</button
+
+//<button onClick={dataToFirebase}>add to firebase</button>
+
+/*
+import { useState } from 'react';
+import sendCustomEmail from '../componentes/data/formHooks';
+
+function ContactUs() {
+	function submitHandler(e) {
+		e.preventDefault();
+		let correo = e.target.correo.value;
+		let asunto = e.target.asunto.value;
+		let texto = e.target.texto.value;
+		sendCustomEmail(correo, asunto, texto);
+		correo = asunto = texto = '';
+	}
+
+	return (
+		<>
+			<h1>Envía correo</h1>
+			<form onSubmit={submitHandler}>
+				<input type="text" name="correo" placeholder="Escribe la dirección" />
+				<input type="text" name="asunto" placeholder="Escribe el asunto" />
+				<input type="text" name="texto" placeholder="Escribe el texto" />
+
+				<button type="submit">Enviar Correo</button>
+			</form>
+		</>
+	);
+}
+export default ContactUs
+*/
