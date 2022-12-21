@@ -1,9 +1,10 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import useCartContext from '../CartContext/CartContext';
-import { collection, addDoc, Timestamp} from 'firebase/firestore/lite';
+import { collection, addDoc, Timestamp} from 'firebase/firestore';
 import firestoreDB from '../data/fireBase';
 import Spinner from '../Spinner/Spinner';
+import sendCustomEmail from '../data/formHooks';
 
 const Checkout = () => {
     const {cart, getTotalPrice, clearCart}=useCartContext();
@@ -37,7 +38,7 @@ const createBuyOrder = async (orderData) =>{
         ...orderData,
         date: buyTimestamp
     };
-    const miColec = collection(firestoreDB,"buyOrders")
+    const miColec = collection(firestoreDB,"ordenDeCompra")
     const orderDoc = await addDoc(miColec, ordenConFecha);
     setOrderID(orderDoc.id);
     clearCart();
@@ -61,91 +62,95 @@ const createBuyOrder = async (orderData) =>{
                 cant:e.cant,
             }})
 
-        
-
         const total= getTotalPrice()
         const orderData = {buyer, items, total}
         console.log("data",orderData)  
         createBuyOrder(orderData)
+        enviarEmail()
         }catch(error){
             console.log(error)
         }
 
     }
 
+    const enviarEmail=(e)=> {
+		let email = "vissiolamparas@gmail.com, consultas@vissio-lamparas.com";
+		let asunto = "Tienes una compra realizada desde el sitio web";
+		let texto = "Ingresa a tu base de ordenes de compra para verificar los detalles de la compra";
+		sendCustomEmail(email, asunto, texto);
+    }
+
     return (
         <>  
             <div className="formularioVenta">
-            <h1>Finalizando la Compra.</h1>
-            <h4>Completa los Datos.</h4>
+            <h1>Finalizando Compra</h1>
+            <h4>Completar Datos:</h4>
             </div>
-            <hr/>
+            <hr />
             {load ? <Spinner />
-                : (!orderID&&<div className="formulario">
-                    <br/>
-                    <div className="formVenta">
-                        <form onSubmit={handleSubmit}>
-                            <input
-                                type="text"
-                                name="Nombre"
-                                placeholder="Nombre Completo"
-                                value={Nombre}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br />
-                            <input
-                                type="text"
-                                name="Domicilio"
-                                placeholder="Calle y numeracion"
-                                value={Domicilio}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br />
-                            <input
-                                type="text"
-                                name="Localidad"
-                                placeholder="Ciudad"
-                                value={Localidad}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br />
-                            <input
-                                type="text"
-                                name="Provincia"
-                                placeholder="Provincia"
-                                value={Provincia}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br />
-                            <input
-                                type="number"
-                                name="Telefono"
-                                placeholder="Telefono"
-                                value={Telefono}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br />
-                            <input
-                                type="Email"
-                                name="Email"
-                                placeholder="Email"
-                                value={Email}
-                                onChange={handleInputChange}
-                                required
-                            />
-                            <br /><br />
-                            <input
-                                type="submit"
-                                value="Finalizar Compra"
-                                className="btn btn-success"
-                            />
-                        </form>
-                    </div>
+                : (!orderID&&<div className="formVenta">
+                    <br />
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            name="Nombre"
+                            placeholder="Nombre Completo"
+                            value={Nombre}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="Domicilio"
+                            placeholder="Calle y numeracion"
+                            value={Domicilio}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="Localidad"
+                            placeholder="Ciudad"
+                            value={Localidad}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="Provincia"
+                            placeholder="Provincia"
+                            value={Provincia}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br />
+                        <input
+                            type="number"
+                            name="Telefono"
+                            placeholder="Telefono"
+                            value={Telefono}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br />
+                        <input
+                            type="Email"
+                            name="Email"
+                            placeholder="Email"
+                            value={Email}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <br /><br />
+                        <input
+                            type="submit"
+                            value="Finalizar Compra"
+                            className="btn btn-success"
+                        />
+                    </form>
                 </div>)
             }
 
@@ -155,7 +160,7 @@ const createBuyOrder = async (orderData) =>{
                     <div className="respuestaOrden">
                         <h4>Compra Finalizada con Exito</h4>
                         <h4>{`Su código de compra es: ${orderID}`}</h4>
-                        <Link to="/" className="orden"><h5>Realizar otra compra</h5></Link>
+                        <Link to="/" className="orden"><h5>Volver a la portada</h5></Link>
                     </div>
                     )
             }
