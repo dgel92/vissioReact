@@ -1545,6 +1545,8 @@ svg {
           justify-content: center;
   margin-top: 10vh;
   margin-left: 20vh;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.171);
+          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.171);
 }
 
 @media (max-width: 1750px) {
@@ -1992,11 +1994,13 @@ svg {
           flex-flow: column nowrap;
   margin-bottom: 2vh;
   margin-top: 2vh;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.363);
   border-radius: 15px;
   width: 82%;
   height: auto;
-  border: 2px solid green;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
 }
 
 .container h2 {
@@ -2027,10 +2031,24 @@ svg {
 }
 
 .buttonEliminar {
-  width: 12vh;
-  height: 4vh;
-  border-radius: 5px;
-  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .buttonEliminar:hover {
@@ -2097,8 +2115,9 @@ svg {
   margin: 60px 0px 60px 0px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1820px) {
   .cartView {
+    all: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2106,23 +2125,13 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     height: 100vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
-  }
-  .button-volver {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .cart-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .container {
     display: -webkit-box;
@@ -2130,89 +2139,42 @@ svg {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    border: 2px solid black;
-    border-radius: 15px;
-    width: 82%;
-    height: auto;
-    border: 2px solid green;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .container h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-    width: 100%;
+  .precio h2 {
+    font-size: 1.8rem;
   }
-  .precio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    margin-top: 1vh;
-  }
-  .precio h3 {
-    font-size: 1rem;
-  }
-  .precio h4 {
-    font-size: 1rem;
-  }
-  .buttonEliminar {
+  .precio .buttonEliminar {
     width: 12vh;
     height: 4vh;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
     font-weight: 700;
   }
-  .buttonEliminar:hover {
+  .precio .buttonEliminar:hover {
     color: #af3737;
     background-color: rgba(184, 17, 17, 0.685);
   }
   .vaciarCarrito {
+    all: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: auto;
-    height: auto;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
   }
-  .vaciarCarrito Button {
-    width: 200px;
-    height: 50px;
-  }
+}
+
+@media (max-width: 1200px) {
   .cart-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 2vh;
-    width: auto;
-    height: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .cart-title h2 {
-    margin-left: 30px;
-  }
-  .cart-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2220,12 +2182,227 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: auto;
-    height: auto;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+  .cart-title img {
+    width: 16rem;
+  }
+  .cart-title h2 {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .precio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 60px 0px 60px 0px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .precio h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .precio .buttonEliminar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .cart-title h2 {
+    font-size: 2rem;
+    margin-top: 2vh;
+  }
+  .precio h2 {
+    font-size: 1.2rem;
+  }
+  .vaciarCarrito {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .vaciarCarrito .btn-checkout {
+    width: 150px;
+    font-size: .9rem;
+  }
+  .vaciarCarrito .checkout {
+    width: 150px;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .precio {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .precio h2 {
+    font-size: 1.2rem;
+  }
+  .precio .buttonEliminar {
+    border: 1.5px solid rgba(0, 0, 0, 0.493);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: -15px;
+  }
+}
+
+.formularioVenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formVenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formVenta form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vh;
+  border: 2px solid rgba(42, 43, 41, 0.589);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.formVenta form input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.formVenta form Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10vh;
+}
+
+@media (max-width: 900px) {
+  .formVenta {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

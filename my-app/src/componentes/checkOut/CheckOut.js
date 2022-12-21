@@ -75,7 +75,7 @@ const createBuyOrder = async (orderData) =>{
 
     return (
         <>  
-            <div className="formularioContacto">
+            <div className="formularioVenta">
             <h1>Finalizando la Compra.</h1>
             <h4>Completa los Datos.</h4>
             </div>
@@ -83,7 +83,7 @@ const createBuyOrder = async (orderData) =>{
             {load ? <Spinner />
                 : (!orderID&&<div className="formulario">
                     <br/>
-                    <div className="formularioContacto">
+                    <div className="formVenta">
                         <form onSubmit={handleSubmit}>
                             <input
                                 type="text"

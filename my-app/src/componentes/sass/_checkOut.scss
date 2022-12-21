@@ -1,0 +1,58 @@
+.formularioVenta{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+
+}
+
+.formVenta{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    align-items: center;
+
+    form{
+        display:flex;
+        flex-direction: column;
+        width: 50vh;
+        border: 2px solid rgba(42, 43, 41, 0.589);
+        border-radius: 10px;
+        padding: 15px;
+        
+        input{
+            display: flex;
+            flex-direction: row;
+            height: 5vh;
+            align-items: center;
+            justify-content: center;
+            align-content: center;        
+        }
+
+        Button{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 10vh;
+            }
+        
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .formVenta{
+    all:unset;
+    display:flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+}
+
+@media (max-width: 400px){
+
+}
