@@ -11,6 +11,7 @@ function ItemList({dataArray}){
                 )
             })
         }
+        <button onClick={dataToFirebase}>add to firebase</button>
         </>
     )
 }

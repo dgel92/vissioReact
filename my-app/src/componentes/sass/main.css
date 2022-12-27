@@ -535,6 +535,11 @@ svg {
   font-size: 1.8rem;
 }
 
+.img-item {
+  width: 340px;
+  height: auto;
+}
+
 .cardFooter {
   display: -webkit-box;
   display: -ms-flexbox;

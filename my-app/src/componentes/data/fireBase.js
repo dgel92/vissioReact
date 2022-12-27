@@ -155,6 +155,53 @@ import platon1 from "../../multimedia/platon-2.jpg";
 import platon2 from "../../multimedia/platon-3.jpg";
 import platon3 from "../../multimedia/platon-4.jpg";
 
+import talesDeMileto from "../../multimedia/talesDeMileto.jpg";
+import talesDeMileto2 from "../../multimedia/talesDeMileto2.jpg";
+
+import socrates from "../../multimedia/socrates.jpg";
+import socrates1 from "../../multimedia/socrates1.jpg";
+import socrates2 from "../../multimedia/socrates2.png";
+
+import tittman from "../../multimedia/tittman.jpg";
+import tittman2 from "../../multimedia/tittman2.jpg";
+import tittman3 from "../../multimedia/tittman3.jpg";
+import tittman4 from "../../multimedia/tittman4.jpg";
+
+import slokar from "../../multimedia/slokar.jpg";
+import slokar1 from "../../multimedia/slokar2.jpg";
+import slokar2 from "../../multimedia/slokar3.jpg";
+
+import Protagora from "../../multimedia/protagora.jpg";
+import Protagora1 from "../../multimedia/protagora1.jpg";
+
+import zizek from "../../multimedia/zizek.jpg";
+import zizek1 from "../../multimedia/zizek1.jpg";
+import zizek2 from "../../multimedia/zizek2.jpg";
+
+import plotino from "../../multimedia/plotino.jpg";
+import plotino1 from "../../multimedia/plotino2.jpg";
+
+import eslavoj from "../../multimedia/eslavoj.jpg";
+import eslavoj1 from "../../multimedia/eslavoj1.jpg";
+import eslavoj2 from "../../multimedia/eslavoj2.jpg";
+
+import spiva from "../../multimedia/spiva.jpg";
+import spiva1 from "../../multimedia/spiva1.jpg";
+import spiva2 from "../../multimedia/spiva2.jpg";
+
+import seneca from "../../multimedia/seneca.jpg";
+import seneca1 from "../../multimedia/seneca1.jpg";
+
+import taylor from "../../multimedia/taylor.jpg";
+import taylor1 from "../../multimedia/taylor1.jpg";
+import taylor2 from "../../multimedia/taylor2.jpg";
+import taylor3 from "../../multimedia/taylor3.jpg";
+
+import voltaire from "../../multimedia/voltaire.jpg";
+
+import rosseau from "../../multimedia/rosseau.jpg";
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyB_TzxO9IElkQQC85JzlShaWhsOqHSUFTM",
     authDomain: "vissio-9f7f5.firebaseapp.com",
@@ -769,7 +816,7 @@ export async function dataToFirebase(){
             categoria: "escritorio",
             portada: false,
             stock: 18,
-            precio: 7.900,
+            precio: 7900,
             caracteristica: "Trabajada en madera de cedro.",
             alto: '0.46m',
             diametro: '',
@@ -789,7 +836,7 @@ export async function dataToFirebase(){
             categoria: "escritorio",
             portada: false,
             stock: 18,
-            precio: 14.900,
+            precio: 14900,
             caracteristica: "Trabajada en madera de cedro.",
             alto: '52cm',
             diametro: '30 x 10cm',
@@ -809,7 +856,7 @@ export async function dataToFirebase(){
             categoria: "lampara de pie",
             portada: false,
             stock: 18,
-            precio: 22.490,
+            precio: 22490,
             caracteristica: "Trabajada en madera de cedro.",
             alto: '1.55m',
             diametro: '44cm',
@@ -829,7 +876,7 @@ export async function dataToFirebase(){
             categoria: "lampara de pie",
             portada: false,
             stock: 18,
-            precio: 19.900,
+            precio: 19900,
             caracteristica: "Trabajada en madera de cedro.",
             alto: '1.25 m',
             diametro: '35 cm',
@@ -837,6 +884,251 @@ export async function dataToFirebase(){
             madera: 'Cedro',
             pantallas: 'Lino - Arpillera.',
             ColoresPantalla: 'Negro, blanco y crudo (Consultar variedades).',
+            },
+            {
+            nombre: 'Tales de Mileto',
+
+            img: talesDeMileto,
+            img1: talesDeMileto2,
+            img2: talesDeMileto,
+            img3: talesDeMileto2,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 28900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '1.60 m',
+            diametro: '44cm',
+            Tipodelampara: 'Led, dos focos',
+            madera: 'Cedro',
+            pantallas: 'Lino - Arpillera.',
+            ColoresPantalla: 'Negro, blanco y crudo (Consultar variedades).',
+            },
+            {
+            nombre: 'Socrates',
+        
+            img: socrates,
+            img1: socrates1,
+            img2: socrates2,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 20490,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '1.50 m',
+            diametro: '44 cm',
+            Tipodelampara: 'Led.',
+            madera: 'Cedro',
+            pantallas: 'Lino - Arpillera.',
+            ColoresPantalla: 'Negro, blanco y crudo (Consultar variedades).',
+            },
+            {
+            nombre: 'Tittman',
+        
+            img: tittman,
+            img1: tittman2,
+            img2: tittman3,
+            img3: tittman4,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 30000,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '0.90 m - con pie extensible',
+            diametro: '1.50 m',
+            Tipodelampara: 'AR-111',
+            madera: 'Cedro',
+            pantallas: 'Metal - Dorado - Negro.',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Slokar',
+        
+            img: slokar,
+            img1: slokar1,
+            img2: slokar2,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 34900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '0.90 m',
+            diametro: '1.50 m',
+            Tipodelampara: 'led 1 und de 14W',
+            madera: 'Cedro',
+            pantallas: 'Metal - Dorado - Negro',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Protagora',
+        
+            img: Protagora,
+            img1: Protagora1,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 34900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '1.55 m',
+            diametro: '0.44 x 0.23 cm',
+            Tipodelampara: 'led 1 und',
+            madera: 'Cedro',
+            pantallas: 'Lino - Arpillera',
+            ColoresPantalla: 'Blanco - Negro - Crudo',
+            },
+            {
+            nombre: 'Zizek',
+        
+            img: zizek,
+            img1: zizek1,
+            img2: zizek2,
+
+            categoria: "escritorio",
+            portada: false,
+            stock: 18,
+            precio: 10900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '52 cm',
+            diametro: '',
+            Tipodelampara: 'led 1 und',
+            madera: 'Cedro',
+            pantallas: 'Chapa pintada',
+            ColoresPantalla: 'Blanco - Negro - Crudo - Plateado',
+            },
+            {
+            nombre: 'Plotino',
+        
+            img: plotino,
+            img1: plotino1,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 23900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '1.58 m',
+            diametro: '0.36 x 0.20 cm',
+            Tipodelampara: 'led 1 und',
+            madera: 'Cedro',
+            pantallas: 'Lino - arpillera',
+            ColoresPantalla: 'Blanco - Negro - Crudo - arpillera',
+            },
+            {
+            nombre: 'Eslavoj',
+        
+            img: eslavoj,
+            img1: eslavoj1,
+            img2: eslavoj2,
+
+            categoria: "colgante",
+            portada: false,
+            stock: 18,
+            precio: 21000,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '',
+            diametro: '0.25 x 0.60 cm',
+            Tipodelampara: 'Tubo fluorescente LED - 2 und',
+            madera: 'Cedro',
+            pantallas: '',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Spiva',
+        
+            img: spiva,
+            img1: spiva1,
+            img2: spiva2,
+
+            categoria: "colgante",
+            portada: false,
+            stock: 18,
+            precio: 20000,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '',
+            diametro: '0.10m x 0.60 m',
+            Tipodelampara: 'Dicroica - 3 und',
+            madera: 'Cedro',
+            pantallas: '',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Seneca',
+        
+            img: seneca,
+            img1: seneca1,
+            img2: seneca,
+            img3: seneca1,
+
+            categoria: "escritorio",
+            portada: false,
+            stock: 18,
+            precio: 9900,
+            caracteristica: "Trabajada en madera de cedro en chapa prepintada.",
+            alto: '0.39 m',
+            diametro: '0.21 m',
+            Tipodelampara: 'Vela - No incluida',
+            madera: 'Cedro',
+            pantallas: '',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Taylor',
+        
+            img: taylor,
+            img1: taylor1,
+            img2: taylor2,
+            img3: taylor3,
+
+            categoria: "escritorio",
+            portada: false,
+            stock: 18,
+            precio: 16900,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '78 cm',
+            diametro: '25 cm',
+            Tipodelampara: 'Led - 2 und',
+            madera: 'Cedro',
+            pantallas: 'Lino',
+            ColoresPantalla: 'Negro - Blanco y Crudo (Consultar variedades).',
+            },
+            {
+            nombre: 'Voltaire',
+        
+            img: voltaire,
+
+            categoria: "escritorio",
+            portada: false,
+            stock: 18,
+            precio: 8500,
+            caracteristica: "Trabajada en madera de cedro.",
+            alto: '46 cm',
+            diametro: '',
+            Tipodelampara: 'Luz bola de carbono',
+            madera: 'Cedro',
+            pantallas: '',
+            ColoresPantalla: '',
+            },
+            {
+            nombre: 'Rosseau',
+        
+            img: rosseau,
+
+            categoria: "escritorio",
+            portada: false,
+            stock: 18,
+            precio: 8500,
+            caracteristica: "Trabajada en madera de cedro con detalles en chapa prepintada.",
+            alto: '46 cm',
+            diametro: '0.20 x 0.16 m',
+            Tipodelampara: 'Led - 1 und',
+            madera: 'Cedro',
+            pantallas: 'Lino - Venecia',
+            ColoresPantalla: 'Consultar colores disponibles',
             },
     ]
 

@@ -8,7 +8,7 @@ function Item({dataArray}){
     return(
         <>
         <Card style={{ width: '20rem' }}>
-            <Card.Img variant="top" src={dataArray.img} />
+            <Card.Img variant="top" className="img-item" src={dataArray.img} />
             <Card.Body>
                 <Card.Title>{dataArray.nombre}</Card.Title>
                 <Card.Text>
