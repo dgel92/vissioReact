@@ -160,7 +160,7 @@ import talesDeMileto2 from "../../multimedia/talesDeMileto2.jpg";
 
 import socrates from "../../multimedia/socrates.jpg";
 import socrates1 from "../../multimedia/socrates1.jpg";
-import socrates2 from "../../multimedia/socrates2.png";
+import socrates2 from "../../multimedia/socrates2.jpg";
 
 import tittman from "../../multimedia/tittman.jpg";
 import tittman2 from "../../multimedia/tittman2.jpg";
@@ -175,14 +175,14 @@ import Protagora from "../../multimedia/protagora.jpg";
 import Protagora1 from "../../multimedia/protagora1.jpg";
 
 import zizek from "../../multimedia/zizek.jpg";
-import zizek1 from "../../multimedia/zizek1.jpg";
+import zizek1 from "../../multimedia/zizek2.jpg";
 import zizek2 from "../../multimedia/zizek2.jpg";
 
 import plotino from "../../multimedia/plotino.jpg";
 import plotino1 from "../../multimedia/plotino2.jpg";
 
 import eslavoj from "../../multimedia/eslavoj.jpg";
-import eslavoj1 from "../../multimedia/eslavoj1.jpg";
+import eslavoj1 from "../../multimedia/eslavoj-1.jpg";
 import eslavoj2 from "../../multimedia/eslavoj2.jpg";
 
 import spiva from "../../multimedia/spiva.jpg";
@@ -190,7 +190,6 @@ import spiva1 from "../../multimedia/spiva1.jpg";
 import spiva2 from "../../multimedia/spiva2.jpg";
 
 import seneca from "../../multimedia/seneca.jpg";
-import seneca1 from "../../multimedia/seneca1.jpg";
 
 import taylor from "../../multimedia/taylor.jpg";
 import taylor1 from "../../multimedia/taylor1.jpg";
@@ -987,6 +986,7 @@ export async function dataToFirebase(){
             img: zizek,
             img1: zizek1,
             img2: zizek2,
+            img3: zizek,
 
             categoria: "escritorio",
             portada: false,
@@ -1060,9 +1060,9 @@ export async function dataToFirebase(){
             nombre: 'Seneca',
         
             img: seneca,
-            img1: seneca1,
+            img1: seneca,
             img2: seneca,
-            img3: seneca1,
+            img3: seneca,
 
             categoria: "escritorio",
             portada: false,
@@ -1129,6 +1129,23 @@ export async function dataToFirebase(){
             madera: 'Cedro',
             pantallas: 'Lino - Venecia',
             ColoresPantalla: 'Consultar colores disponibles',
+            },
+            {
+            nombre: 'Qatar',
+        
+            img: rosseau,
+
+            categoria: "lampara de pie",
+            portada: false,
+            stock: 18,
+            precio: 8500,
+            caracteristica: "Trabajada en madera de cedro, prepintada en color blanco.",
+            alto: '1.60 m',
+            diametro: '0.48 x 0.43 m',
+            Tipodelampara: 'Led - 1 und',
+            madera: 'Cedro',
+            pantallas: 'Lino - Tela de gros',
+            ColoresPantalla: 'Negro - Blanco y Crudo (Consultar variedades).',
             },
     ]
 
