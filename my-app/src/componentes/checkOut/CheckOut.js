@@ -75,8 +75,8 @@ const createBuyOrder = async (orderData) =>{
 
     const enviarEmail=(e)=> {
 		let email = "vissiolamparas@gmail.com, consultas@vissio-lamparas.com";
-		let asunto = "Tienes una compra realizada desde el sitio web";
-		let texto = "Ingresa a tu base de ordenes de compra para verificar los detalles de la compra";
+		let asunto = "Tienes una compra realizada desde el sitio web, ingresa a la base de ordenes";
+		let texto = "https://console.firebase.google.com/u/0/project/vissio-9f7f5/firestore/data/~2FemailNotificaciones~2FALdf6QNZXVrdEJw6ymYy?hl=es";
 		sendCustomEmail(email, asunto, texto);
     }
 

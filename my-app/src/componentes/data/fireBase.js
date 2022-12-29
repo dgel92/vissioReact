@@ -1,21 +1,15 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import {getFirestore, doc, getDoc, query, where, collection, getDocs, setDoc, Timestamp, addDoc,} from 'firebase/firestore'
-import {getMessaging} from "firebase/messaging"
 
 import alain from "../../multimedia/alain-1.jpg";
 import alain1 from "../../multimedia/alain-2.jpg";
 import alain2 from "../../multimedia/alain-3.jpg";
 import alain3 from "../../multimedia/alain-4.jpg";
-import alain4 from "../../multimedia/alain-5.jpg";
-import alain5 from "../../multimedia/alain-6.jpg";
-
 
 import anoximenes from "../../multimedia/anoximenes-1.jpg";     
 import anoximenes1 from "../../multimedia/anoximenes-2.jpg";     
 import anoximenes2 from "../../multimedia/anoximenes-3.jpg";     
 import anoximenes3 from "../../multimedia/anoximenes-4.jpg";     
-import anoximenes4 from "../../multimedia/anoximenes-5.jpg";     
 
 
 import aristoteles from "../../multimedia/aristoteles-1.jpg";
@@ -26,8 +20,6 @@ import badiou from "../../multimedia/badiou-1.jpg";
 import badiou1 from "../../multimedia/badiou-2.jpg";
 import badiou2 from "../../multimedia/badiou-3.jpg";
 import badiou3 from "../../multimedia/badiou-4.jpg";
-import badiou4 from "../../multimedia/badiou-5.jpg";
-
 
 import barcelona from "../../multimedia/barcelona-1.jpg";
 import barcelona1 from "../../multimedia/barcelona-2.jpg";
@@ -213,10 +205,8 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const firestoreDB = getFirestore(app);
-const analytics= getAnalytics(app);
 
 export default firestoreDB;
-export const messaging = getMessaging(app);
 
 export async function getAllItems(){
 

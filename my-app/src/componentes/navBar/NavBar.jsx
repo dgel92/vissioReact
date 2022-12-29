@@ -17,7 +17,7 @@ function NavBar(){
     return(
         <>
         <div className='navmediaQuery'>
-            <div className="navlineaNegrita"><p>Envios a todo el pais - </p></div>
+            <div className="navlineaNegrita"><p>Envíos a todo el país </p></div>
                 {[false].map((expand) => (
                     <Navbar key={expand} bg="light" expand={expand} className="mb-3 navContainer">
                         <Container fluid > 
