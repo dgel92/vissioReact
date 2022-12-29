@@ -296,43 +296,38 @@ svg {
   }
 }
 
-@media (max-width: 505px) {
-  .formularioContacto h1 {
-    text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.08em;
+@media (max-width: 680px) {
+  .imgFormulario {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .formularioContacto h4 {
-    text-align: center;
-    padding-right: 10%;
-    padding-left: 10%;
-    font-size: 1.2rem;
-    letter-spacing: 0.09em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 550;
+  .formularioContacto {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
 }
 
-@media (max-width: 505px) {
-  .formularioContacto h1 {
-    text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.08em;
+@media (max-width: 426px) {
+  .imgFormulario {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .formularioContacto h4 {
-    text-align: center;
-    padding-right: 10%;
-    padding-left: 10%;
-    font-size: 1rem;
-    letter-spacing: 0.09em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 550;
+  .formularioContacto {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2vh;
   }
 }
 
@@ -463,6 +458,30 @@ svg {
     margin-top: 40px;
     margin-left: 40px;
     width: 80%;
+  }
+  .navlineaNegrita {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+  .navlineaNegrita p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-top: 12px;
+    color: white;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    font-weight: 500;
   }
 }
 
